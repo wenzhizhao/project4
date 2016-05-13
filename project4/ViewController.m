@@ -24,7 +24,7 @@
     NSLog(@"wenzi");
     
     
-    int i =1 ;
+    int i = 443 ;
     NSLog(@"%d",i);
 }
 
