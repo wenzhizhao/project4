@@ -22,6 +22,7 @@
     NSLog(@"haha");
     NSLog(@"michael ");
     NSLog(@"wenzi");
+    
     int i = 0 ;
     NSLog(@"%d",i);
 }
