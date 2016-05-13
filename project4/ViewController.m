@@ -22,6 +22,10 @@
     NSLog(@"haha");
     NSLog(@"michael ");
     NSLog(@"wenzi");
+    
+    
+    int i =1 ;
+    NSLog(@"%d",i);
 }
 
 - (void)didReceiveMemoryWarning {
