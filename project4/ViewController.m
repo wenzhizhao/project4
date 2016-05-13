@@ -21,6 +21,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     NSLog(@"haha");
     NSLog(@"michael ");
+    NSLog(@"wenzi");
 }
 
 - (void)didReceiveMemoryWarning {
