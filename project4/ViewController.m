@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "customerViewController.h"
 @interface ViewController ()
 
 @end
@@ -23,10 +23,21 @@
     NSLog(@"michael ");
     NSLog(@"wenzi");
     
-    int i = 0 ;
+    
+    int i = 443 ;
     NSLog(@"%d",i);
 }
 
+- (IBAction)nextStoryBoard:(id)sender {
+    
+    UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    customerViewController *contrller =  [storyboard instantiateViewControllerWithIdentifier:@"customerViewController"];
+    
+    [self presentViewController:contrller animated:YES completion:nil];
+    
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
