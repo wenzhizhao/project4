@@ -15,6 +15,7 @@
 		4E15665D1CE62AEE0083CA26 /* project4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E15665B1CE62AEE0083CA26 /* project4.xcdatamodeld */; };
 		4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E15665E1CE62AEE0083CA26 /* Assets.xcassets */; };
 		4E1566621CE62AEE0083CA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1566601CE62AEE0083CA26 /* LaunchScreen.storyboard */; };
+		4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */; };
 		D79321D11CE6402000ED9077 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79321D01CE6402000ED9077 /* Storyboard.storyboard */; };
 		D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321D31CE6404B00ED9077 /* customerViewController.m */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,8 @@
 		4E15665E1CE62AEE0083CA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E1566611CE62AEE0083CA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E1566631CE62AEE0083CA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E1566691CE673CE0083CA26 /* customerregisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customerregisterViewController.h; sourceTree = "<group>"; };
+		4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customerregisterViewController.m; sourceTree = "<group>"; };
 		777A424D6CAD81F490F5EA62 /* Pods-project4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.debug.xcconfig"; sourceTree = "<group>"; };
 		D79321D01CE6402000ED9077 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D79321D21CE6404B00ED9077 /* customerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customerViewController.h; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				D79321D01CE6402000ED9077 /* Storyboard.storyboard */,
 				D79321D21CE6404B00ED9077 /* customerViewController.h */,
 				D79321D31CE6404B00ED9077 /* customerViewController.m */,
+				4E1566691CE673CE0083CA26 /* customerregisterViewController.h */,
+				4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */,
 			);
 			name = Customer;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			files = (
 				4E15665D1CE62AEE0083CA26 /* project4.xcdatamodeld in Sources */,
 				4E1566571CE62AEE0083CA26 /* ViewController.m in Sources */,
+				4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */,
 				D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */,
 				4E1566541CE62AEE0083CA26 /* AppDelegate.m in Sources */,
 				4E1566511CE62AEE0083CA26 /* main.m in Sources */,
