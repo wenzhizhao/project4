@@ -7,7 +7,8 @@
 //
 
 #import "DocotorMainViewController.h"
-
+#import "MyCalendarViewController.h"
+#import "MyAppointmentsViewController.h"
 @interface DocotorMainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *docotorTableView;
 
@@ -29,8 +30,8 @@
 
 -(void)Myactivities: (id)sender{
     
-    
-    
+    MyCalendarViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MyCalendarViewController"];
+    [self presentViewController:controller animated:YES completion:nil];
     
 }
 
@@ -73,7 +74,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    MyAppointmentsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MyAppointmentsViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
     
 }
 
