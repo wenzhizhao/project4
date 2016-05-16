@@ -30,7 +30,6 @@
 		D79322001CE98E4A00ED9077 /* Itachi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321F91CE98E4A00ED9077 /* Itachi.jpg */; };
 		D79322011CE98E4A00ED9077 /* medical copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321FA1CE98E4A00ED9077 /* medical copy.png */; };
 		D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FB1CE98E4A00ED9077 /* Naruto.jpg */; };
-		D79322031CE98E4A00ED9077 /* prifile.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321FC1CE98E4A00ED9077 /* prifile.png */; };
 		D79322041CE98E4A00ED9077 /* Sasuke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */; };
 		D79322051CE98E4A00ED9077 /* superman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FE1CE98E4A00ED9077 /* superman.jpg */; };
 		D793220E1CE999E000ED9077 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D793220D1CE999E000ED9077 /* CollectionViewCell.m */; };
@@ -72,7 +71,6 @@
 		D79321F91CE98E4A00ED9077 /* Itachi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Itachi.jpg; sourceTree = "<group>"; };
 		D79321FA1CE98E4A00ED9077 /* medical copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medical copy.png"; sourceTree = "<group>"; };
 		D79321FB1CE98E4A00ED9077 /* Naruto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Naruto.jpg; sourceTree = "<group>"; };
-		D79321FC1CE98E4A00ED9077 /* prifile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prifile.png; sourceTree = "<group>"; };
 		D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sasuke.jpg; sourceTree = "<group>"; };
 		D79321FE1CE98E4A00ED9077 /* superman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superman.jpg; sourceTree = "<group>"; };
 		D793220C1CE999E000ED9077 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				D79321F91CE98E4A00ED9077 /* Itachi.jpg */,
 				D79321FA1CE98E4A00ED9077 /* medical copy.png */,
 				D79321FB1CE98E4A00ED9077 /* Naruto.jpg */,
-				D79321FC1CE98E4A00ED9077 /* prifile.png */,
 				D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */,
 				D79321FE1CE98E4A00ED9077 /* superman.jpg */,
 				D79321ED1CE683AB00ED9077 /* prifile-pic.png */,
@@ -271,7 +268,6 @@
 				D79321EE1CE683AB00ED9077 /* prifile-pic.png in Resources */,
 				D79321D11CE6402000ED9077 /* Storyboard.storyboard in Resources */,
 				D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */,
-				D79322031CE98E4A00ED9077 /* prifile.png in Resources */,
 				4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */,
 				D79321EA1CE6821900ED9077 /* Calendar-25.png in Resources */,
 				4E15665A1CE62AEE0083CA26 /* Main.storyboard in Resources */,
