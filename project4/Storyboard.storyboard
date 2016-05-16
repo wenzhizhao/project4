@@ -5,99 +5,32 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--hahaha-->
-        <scene sceneID="4Qw-Yg-GdJ">
+        <!--Customer View Controller-->
+        <scene sceneID="0Nr-tl-6Fp">
             <objects>
-                <viewController storyboardIdentifier="customerViewController" id="PP4-SN-KEE" customClass="customerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customerViewController" id="psJ-7d-3ru" customClass="customerViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AUP-wK-Po6"/>
-                        <viewControllerLayoutGuide type="bottom" id="xQK-od-J3N"/>
+                        <viewControllerLayoutGuide type="top" id="7YH-ux-aGZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZFR-Pg-i4z"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bex-5r-uDP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <view key="view" contentMode="scaleToFill" id="CdG-TG-n5x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fM-6x-av5">
-                                <rect key="frame" x="137" y="187" width="87" height="30"/>
-                                <state key="normal" title="temp vc"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZY-vq-AQx">
+                                <rect key="frame" x="307" y="206" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="tempJump:" destination="PP4-SN-KEE" eventType="touchUpInside" id="cNw-Pr-2Nt"/>
+                                    <action selector="tempJump:" destination="psJ-7d-3ru" eventType="touchUpInside" id="yYA-uB-lKL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="hahaha" id="snj-eT-42M"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4j5-gH-G8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAp-aT-tnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="949" y="-239"/>
-        </scene>
-        <!--haha-->
-        <scene sceneID="CNm-D6-qcq">
-            <objects>
-                <viewController storyboardIdentifier="customerregisterViewController" id="seE-11-BUP" customClass="customerregisterViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ziR-bz-x0O"/>
-                        <viewControllerLayoutGuide type="bottom" id="5n1-Ng-8D1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="N9W-KK-JYA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-OY-Ay1">
-                                <rect key="frame" x="19" y="87" width="43" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="haha" id="7Xg-EW-6mN"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dBh-EY-x7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2159" y="-239"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="pEe-W3-qBP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5u-5j-hyK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N5X-AD-vRs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="PP4-SN-KEE" kind="relationship" relationship="rootViewController" id="hpc-7c-xVh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4J8-VL-RYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="518" y="-239"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="kQK-RU-N34">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xnn-bN-b2U" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AyL-EM-Kdo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="seE-11-BUP" kind="relationship" relationship="rootViewController" id="nDH-og-aaU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aJr-WP-Ib6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1455" y="-179"/>
+            <point key="canvasLocation" x="455" y="329"/>
         </scene>
     </scenes>
 </document>
