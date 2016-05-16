@@ -162,7 +162,7 @@
                                     <outlet property="delegate" destination="Y6b-QC-7Jj" id="hyl-Yc-UHJ"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prifile-pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-fM-8sK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="superman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-fM-8sK">
                                 <rect key="frame" x="100" y="20" width="120" height="120"/>
                             </imageView>
                         </subviews>
@@ -212,7 +212,7 @@
                             </toolbar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-0b-bLg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iDU-Ph-2fz">
                                     <size key="itemSize" width="48" height="47"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -220,30 +220,37 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="Cell" id="sTg-Sd-bGP" customClass="CollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CustomCollectionViewCell" reuseIdentifier="Cell" id="sTg-Sd-bGP" customClass="CustomCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="48" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emY-Kd-Vm9">
+                                                    <rect key="frame" x="1" y="1" width="46" height="45"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUF-YX-cSJ">
-                                                    <rect key="frame" x="14" y="38" width="19" height="9"/>
+                                                    <rect key="frame" x="14" y="34" width="19" height="9"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="7"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emY-Kd-Vm9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="47"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="emY-Kd-Vm9" firstAttribute="top" secondItem="sTg-Sd-bGP" secondAttribute="top" constant="0.5" id="cUM-QR-23b"/>
+                                            <constraint firstAttribute="bottom" secondItem="emY-Kd-Vm9" secondAttribute="bottom" constant="0.5" id="fVv-gz-SVl"/>
+                                            <constraint firstItem="emY-Kd-Vm9" firstAttribute="leading" secondItem="sTg-Sd-bGP" secondAttribute="leading" constant="0.5" id="syS-ev-Y0y"/>
+                                            <constraint firstAttribute="trailing" secondItem="emY-Kd-Vm9" secondAttribute="trailing" constant="0.5" id="tgU-Et-Npa"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="BtnOutlet" destination="emY-Kd-Vm9" id="cEW-PC-7Bo"/>
-                                            <outlet property="lable" destination="HUF-YX-cSJ" id="ebs-p0-ebh"/>
+                                            <outlet property="BtnOutlet" destination="emY-Kd-Vm9" id="Hx6-M1-p1q"/>
+                                            <outlet property="lable" destination="HUF-YX-cSJ" id="eGT-4o-yqQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -594,7 +601,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prifile-pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="E22-Fx-Vt4">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="E22-Fx-Vt4">
                                         <rect key="frame" x="111" y="20" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="9F5-K3-2h9"/>
@@ -799,6 +806,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="prifile-pic.png" width="600" height="557"/>
+        <image name="superman.jpg" width="50" height="50"/>
     </resources>
 </document>

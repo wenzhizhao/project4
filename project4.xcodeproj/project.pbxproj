@@ -37,11 +37,7 @@
 		D79321F41CE6875200ED9077 /* MyAppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F31CE6875200ED9077 /* MyAppointmentsViewController.m */; };
 		D79321F71CE93A1800ED9077 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F61CE93A1800ED9077 /* NavigationViewController.m */; };
 		D79321FF1CE98E4A00ED9077 /* Bleach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321F81CE98E4A00ED9077 /* Bleach.jpg */; };
-		D79322001CE98E4A00ED9077 /* Itachi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321F91CE98E4A00ED9077 /* Itachi.jpg */; };
-		D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FB1CE98E4A00ED9077 /* Naruto.jpg */; };
-		D79322041CE98E4A00ED9077 /* Sasuke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */; };
-		D79322051CE98E4A00ED9077 /* superman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FE1CE98E4A00ED9077 /* superman.jpg */; };
-		D793220E1CE999E000ED9077 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D793220D1CE999E000ED9077 /* CollectionViewCell.m */; };
+		D79322111CEA22B300ED9077 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79322101CEA22B300ED9077 /* CustomCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,8 +97,8 @@
 		D79321FB1CE98E4A00ED9077 /* Naruto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Naruto.jpg; sourceTree = "<group>"; };
 		D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sasuke.jpg; sourceTree = "<group>"; };
 		D79321FE1CE98E4A00ED9077 /* superman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superman.jpg; sourceTree = "<group>"; };
-		D793220C1CE999E000ED9077 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		D793220D1CE999E000ED9077 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		D793220F1CEA22B300ED9077 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		D79322101CEA22B300ED9077 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		ED0B10EBDFEEF27E953D8339 /* Pods-project4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.release.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,8 +215,8 @@
 				D79321F31CE6875200ED9077 /* MyAppointmentsViewController.m */,
 				D79321EF1CE6874200ED9077 /* MyCalendarViewController.h */,
 				D79321F01CE6874200ED9077 /* MyCalendarViewController.m */,
-				D793220C1CE999E000ED9077 /* CollectionViewCell.h */,
-				D793220D1CE999E000ED9077 /* CollectionViewCell.m */,
+				D793220F1CEA22B300ED9077 /* CustomCollectionViewCell.h */,
+				D79322101CEA22B300ED9077 /* CustomCollectionViewCell.m */,
 				4E1566551CE62AEE0083CA26 /* ViewController.h */,
 				4E1566561CE62AEE0083CA26 /* ViewController.m */,
 				D79321DD1CE66F6F00ED9077 /* SignInViewController.h */,
@@ -396,6 +392,7 @@
 				D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */,
 				D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */,
 				D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */,
+				D79322111CEA22B300ED9077 /* CustomCollectionViewCell.m in Sources */,
 				4E1566511CE62AEE0083CA26 /* main.m in Sources */,
 				D79321F71CE93A1800ED9077 /* NavigationViewController.m in Sources */,
 				4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */,
