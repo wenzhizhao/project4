@@ -32,24 +32,24 @@
     
     switch (sender.tag) {
         case 101:
-            [vc setGotString:@"CARDIOLOGISTS"];
+            [vc setGotString:@"Cardiologist"];
             break;
         case 102:
-            [vc setGotString:@"DENTISTS"];
+            [vc setGotString:@"Dentist"];
             break;
         
         case 103:
-            [vc setGotString:@"DERMATOLOGISTS"];
+            [vc setGotString:@"Dermatologist"];
             break;
         case 104:
-            [vc setGotString:@"GYNAECOLOGISTS"];
+            [vc setGotString:@"Gynecologist"];
             break;
         case 105:
-            [vc setGotString:@"OPHTHALMOLOGISTS"];
+            [vc setGotString:@"Ophthalmologist"];
             break;
             
         case 106:
-            [vc setGotString:@"PSYCHOLOGISTS"];
+            [vc setGotString:@"Psychologist"];
             break;
             
         default:

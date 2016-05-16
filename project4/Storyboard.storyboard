@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -279,7 +279,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Er-fw-7lf" id="nnJ-El-kFx">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="112.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52n-DY-9SL">
@@ -354,7 +354,6 @@
                                 <state key="normal" title="Make an appointment"/>
                                 <connections>
                                     <action selector="appointmentBtn:" destination="CST-XL-PVF" eventType="touchUpInside" id="n0c-A0-69Q"/>
-                                    <action selector="appointmentbtn_tapped:" destination="CST-XL-PVF" eventType="touchUpInside" id="NGZ-w6-FGh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Specialization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Va7-fI-nBb">
@@ -392,12 +391,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="detailtv" destination="quw-bk-Ytj" id="087-a1-Jgn"/>
-                        <outlet property="imgBackground" destination="S4t-7f-3Te" id="F6v-EW-kZi"/>
-                        <outlet property="imgIcon" destination="RLf-Zk-jLU" id="8Xu-lz-pXB"/>
-                        <outlet property="nametf" destination="PgT-NA-KST" id="ne7-gQ-FoQ"/>
-                        <outlet property="spectf" destination="Va7-fI-nBb" id="deo-m3-jVg"/>
-                        <outlet property="worktimetf" destination="FeR-hF-x1z" id="tZS-AC-QoJ"/>
+                        <outlet property="descriptField" destination="quw-bk-Ytj" id="dZp-vk-7s7"/>
+                        <outlet property="image" destination="RLf-Zk-jLU" id="Fgk-10-btj"/>
+                        <outlet property="nameLbl" destination="PgT-NA-KST" id="6j5-mf-0ep"/>
+                        <outlet property="specializationLbl" destination="Va7-fI-nBb" id="Gur-40-vCo"/>
+                        <outlet property="worktimeLbl" destination="FeR-hF-x1z" id="FnZ-kO-VcF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFe-58-3PL" userLabel="First Responder" sceneMemberID="firstResponder"/>
