@@ -9,7 +9,12 @@
 #import "cDocDetailsViewController.h"
 
 @interface cDocDetailsViewController ()
-
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UILabel *nameLbl;
+@property (weak, nonatomic) IBOutlet UILabel *specializationLbl;
+@property (weak, nonatomic) IBOutlet UILabel *worktimeLbl;
+@property (weak, nonatomic) IBOutlet UITextView *descriptField;
+- (IBAction)appointmentBtn:(id)sender;
 @end
 
 @implementation cDocDetailsViewController
@@ -21,4 +26,7 @@
 
 
 
+- (IBAction)appointmentBtn:(id)sender {
+    //push to appointment vc
+}
 @end
