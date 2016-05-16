@@ -23,13 +23,12 @@
 - (IBAction)tempJump:(id)sender {
 //    UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     customerregisterViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"customerregisterViewController"];
-//    [self.navigationController pushViewController:vc animated:YES];
-    [self presentViewController:vc animated:YES completion:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)tempsignIn:(id)sender {
     cloginViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cloginViewController"];
-    //    [self.navigationController pushViewController:vc animated:YES];
-    [self presentViewController:vc animated:YES completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+//    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end

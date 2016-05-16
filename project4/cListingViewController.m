@@ -6,19 +6,19 @@
 //  Copyright © 2016 Wenzhi Zhao. All rights reserved.
 //
 
-#import "clistViewController.h"
+#import "cListingViewController.h"
 #import "ClistTableViewCell.h"
 #import <Parse.h>
 
 #import "cDocDetailsViewController.h"
 
-@interface clistViewController ()
+@interface cListingViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tblView;
 @property (strong, nonatomic) NSArray *docArry;
 @end
 
-@implementation clistViewController
+@implementation cListingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,6 +42,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
     
     return self.docArry.count;
 }
@@ -72,12 +73,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     cDocDetailsViewController * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cDocDetailsViewController"];
-//    vc.passedString = [NSString stringWithFormat:@"%d",indexPath.row];
+    //    vc.passedString = [NSString stringWithFormat:@"%d",indexPath.row];
     PFObject *obj = [self.docArry objectAtIndex:indexPath.row];
     vc.passedString = [obj valueForKey:@"Mobile"];
     NSLog(@"%@",vc.passedString);
-//    [self.navigationController pushViewController:vc animated:YES];
-    [self presentViewController:vc animated:YES completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+//    [self presentViewController:vc animated:YES completion:nil];
     
 }
 

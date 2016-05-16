@@ -31,7 +31,8 @@
 - (IBAction)nextStoryBoard:(id)sender {
     UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     customerViewController *contrller =  [storyboard instantiateViewControllerWithIdentifier:@"customerViewController"];
-    [self presentViewController:contrller animated:YES completion:nil];
+//    [self presentViewController:contrller animated:YES completion:nil];
+    [self.navigationController pushViewController:contrller animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

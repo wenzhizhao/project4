@@ -6,17 +6,17 @@
 //  Copyright © 2016 Wenzhi Zhao. All rights reserved.
 //
 
-#import "cpickViewController.h"
-#import "clistViewController.h"
+#import "cPickingViewController.h"
+#import "cListingViewController.h"
 
-@interface cpickViewController ()
+@interface cPickingViewController ()
 
 
 - (IBAction)button_tapped:(UIButton *)sender;
 
 @end
 
-@implementation cpickViewController
+@implementation cPickingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +28,7 @@
 
 
 - (IBAction)button_tapped:(UIButton *)sender {
-    clistViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"clistViewController"];
+    cListingViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cListingViewController"];
     
     switch (sender.tag) {
         case 101:
@@ -37,7 +37,7 @@
         case 102:
             [vc setGotString:@"Dentist"];
             break;
-        
+            
         case 103:
             [vc setGotString:@"Dermatologist"];
             break;
@@ -55,8 +55,9 @@
         default:
             break;
     }
-//    [self.navigationController pushViewController:vc animated:YES];
-    [self presentViewController:vc animated:YES completion:nil];
-
+        [self.navigationController pushViewController:vc animated:YES];
+//    [self presentViewController:vc animated:YES completion:nil];
+    
 }
+
 @end
