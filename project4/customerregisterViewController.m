@@ -82,13 +82,13 @@
     }
 }
 -(BOOL) isPasswordValid:(NSString *)pwd {
-    if ( [pwd length]<5 || [pwd length]>8 ) return NO;  // too long or too short
-    NSRange rang;
-    rang = [pwd rangeOfCharacterFromSet:[NSCharacterSet lowercaseLetterCharacterSet]];
-    if ( !rang.length ) return NO;  // no lower letter
-    rang = [pwd rangeOfCharacterFromSet:[NSCharacterSet uppercaseLetterCharacterSet]];
-    if ( !rang.length ) return NO;  // no upper letter
-    rang = [pwd rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]];
-    if ( !rang.length )  return NO;  // no number;
+//    if ( [pwd length]<5 || [pwd length]>8 ) return NO;  // too long or too short
+//    NSRange rang;
+//    rang = [pwd rangeOfCharacterFromSet:[NSCharacterSet lowercaseLetterCharacterSet]];
+//    if ( !rang.length ) return NO;  // no lower letter
+//    rang = [pwd rangeOfCharacterFromSet:[NSCharacterSet uppercaseLetterCharacterSet]];
+//    if ( !rang.length ) return NO;  // no upper letter
+//    rang = [pwd rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]];
+//    if ( !rang.length )  return NO;  // no number;
     return YES;
 }@end

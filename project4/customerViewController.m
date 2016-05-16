@@ -8,6 +8,7 @@
 
 #import "customerViewController.h"
 #import "customerregisterViewController.h"
+#import "cloginViewController.h"
 @interface customerViewController ()
 
 @end
@@ -23,6 +24,11 @@
 //    UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     customerregisterViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"customerregisterViewController"];
 //    [self.navigationController pushViewController:vc animated:YES];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)tempsignIn:(id)sender {
+    cloginViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cloginViewController"];
+    //    [self.navigationController pushViewController:vc animated:YES];
     [self presentViewController:vc animated:YES completion:nil];
 }
 

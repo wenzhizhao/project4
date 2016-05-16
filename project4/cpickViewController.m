@@ -28,7 +28,7 @@
 
 
 - (IBAction)button_tapped:(UIButton *)sender {
-    clistViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell_Clist"];
+    clistViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"clistViewController"];
     
     switch (sender.tag) {
         case 101:
@@ -55,7 +55,8 @@
         default:
             break;
     }
-    [self.navigationController pushViewController:vc animated:YES];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self presentViewController:vc animated:YES completion:nil];
 
 }
 @end

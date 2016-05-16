@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xnx-8I-nYr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,7 +28,7 @@
                                 <rect key="frame" x="138" y="199" width="45" height="30"/>
                                 <state key="normal" title="sign in"/>
                                 <connections>
-                                    <action selector="tempJump:" destination="psJ-7d-3ru" eventType="touchUpInside" id="Ccx-vb-8tQ"/>
+                                    <action selector="tempsignIn:" destination="psJ-7d-3ru" eventType="touchUpInside" id="LA3-bi-dN4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -155,7 +155,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <connections>
-                                    <outlet property="delegate" destination="YUG-VX-HEx" id="FcJ-yb-vjz"/>
+                                    <outlet property="delegate" destination="YUG-VX-HEx" id="AVn-t1-TBh"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSB-Tf-jLN">
@@ -163,7 +163,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="YUG-VX-HEx" id="dWb-1Y-Yvu"/>
+                                    <outlet property="delegate" destination="YUG-VX-HEx" id="Rv0-An-xpV"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCz-KN-39J">
@@ -171,25 +171,19 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginBtn:" destination="YUG-VX-HEx" eventType="touchUpInside" id="b7D-Gs-Kj6"/>
-                                    <action selector="loginbtn_tapped:" destination="YUG-VX-HEx" eventType="touchUpInside" id="jnX-Fh-eTK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83J-NC-OKT">
                                 <rect key="frame" x="191" y="371" width="119" height="30"/>
                                 <state key="normal" title="Forgot paswd"/>
-                                <connections>
-                                    <action selector="forgotPaswdBtn_Pressed:" destination="YUG-VX-HEx" eventType="touchUpInside" id="rDb-Wh-3fg"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="mobileField" destination="nvM-97-pkp" id="HUM-LB-hKp"/>
-                        <outlet property="mobiletf" destination="nvM-97-pkp" id="jpg-rr-Tsz"/>
-                        <outlet property="passField" destination="bSB-Tf-jLN" id="ffr-bs-pBE"/>
-                        <outlet property="pwdft" destination="bSB-Tf-jLN" id="d7f-fH-oCB"/>
+                        <outlet property="mobileField" destination="nvM-97-pkp" id="ZKr-rg-0KE"/>
+                        <outlet property="passField" destination="bSB-Tf-jLN" id="deQ-be-UXx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty8-mN-xjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -398,12 +392,12 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="descriptField" destination="quw-bk-Ytj" id="GJJ-G1-6Vn"/>
-                        <outlet property="image" destination="RLf-Zk-jLU" id="hlx-TS-V8g"/>
+                        <outlet property="detailtv" destination="quw-bk-Ytj" id="087-a1-Jgn"/>
                         <outlet property="imgBackground" destination="S4t-7f-3Te" id="F6v-EW-kZi"/>
-                        <outlet property="nameLbl" destination="PgT-NA-KST" id="2Fq-iF-13r"/>
-                        <outlet property="specializationLbl" destination="Va7-fI-nBb" id="2ng-pR-TvK"/>
-                        <outlet property="worktimeLbl" destination="FeR-hF-x1z" id="M1r-mc-1v7"/>
+                        <outlet property="imgIcon" destination="RLf-Zk-jLU" id="8Xu-lz-pXB"/>
+                        <outlet property="nametf" destination="PgT-NA-KST" id="ne7-gQ-FoQ"/>
+                        <outlet property="spectf" destination="Va7-fI-nBb" id="deo-m3-jVg"/>
+                        <outlet property="worktimetf" destination="FeR-hF-x1z" id="tZS-AC-QoJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFe-58-3PL" userLabel="First Responder" sceneMemberID="firstResponder"/>
