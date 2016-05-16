@@ -97,18 +97,30 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gc-Y8-Apo">
-                                <rect key="frame" x="184" y="374" width="47" height="30"/>
+                                <rect key="frame" x="184" y="375" width="47" height="30"/>
                                 <state key="normal" title="submit"/>
+                                <connections>
+                                    <action selector="submitBtn:" destination="KsL-Gu-bdY" eventType="touchUpInside" id="bPQ-wQ-n7z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-oh-HmD">
                                 <rect key="frame" x="77" y="374" width="45" height="30"/>
                                 <state key="normal" title="cancel"/>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="KsL-Gu-bdY" eventType="touchUpInside" id="DY1-27-bV6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailField" destination="llS-Fd-Le2" id="W58-kB-hgU"/>
+                        <outlet property="mobileField" destination="AmC-Vw-3cC" id="APQ-Hm-aLS"/>
+                        <outlet property="nameField" destination="7we-0W-9ho" id="L7P-uI-yxA"/>
+                        <outlet property="passField" destination="Wd0-iJ-SIM" id="4CH-69-r3F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDF-2O-bfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,6 +170,7 @@
                                 <rect key="frame" x="104" y="371" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="loginBtn:" destination="YUG-VX-HEx" eventType="touchUpInside" id="b7D-Gs-Kj6"/>
                                     <action selector="loginbtn_tapped:" destination="YUG-VX-HEx" eventType="touchUpInside" id="jnX-Fh-eTK"/>
                                 </connections>
                             </button>
@@ -173,7 +186,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="mobileField" destination="nvM-97-pkp" id="HUM-LB-hKp"/>
                         <outlet property="mobiletf" destination="nvM-97-pkp" id="jpg-rr-Tsz"/>
+                        <outlet property="passField" destination="bSB-Tf-jLN" id="ffr-bs-pBE"/>
                         <outlet property="pwdft" destination="bSB-Tf-jLN" id="d7f-fH-oCB"/>
                     </connections>
                 </viewController>
@@ -344,6 +359,7 @@
                                 <rect key="frame" x="86" y="518" width="148" height="30"/>
                                 <state key="normal" title="Make an appointment"/>
                                 <connections>
+                                    <action selector="appointmentBtn:" destination="CST-XL-PVF" eventType="touchUpInside" id="n0c-A0-69Q"/>
                                     <action selector="appointmentbtn_tapped:" destination="CST-XL-PVF" eventType="touchUpInside" id="NGZ-w6-FGh"/>
                                 </connections>
                             </button>
@@ -382,12 +398,12 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="detailtv" destination="quw-bk-Ytj" id="087-a1-Jgn"/>
+                        <outlet property="descriptField" destination="quw-bk-Ytj" id="GJJ-G1-6Vn"/>
+                        <outlet property="image" destination="RLf-Zk-jLU" id="hlx-TS-V8g"/>
                         <outlet property="imgBackground" destination="S4t-7f-3Te" id="F6v-EW-kZi"/>
-                        <outlet property="imgIcon" destination="RLf-Zk-jLU" id="8Xu-lz-pXB"/>
-                        <outlet property="nametf" destination="PgT-NA-KST" id="ne7-gQ-FoQ"/>
-                        <outlet property="spectf" destination="Va7-fI-nBb" id="deo-m3-jVg"/>
-                        <outlet property="worktimetf" destination="FeR-hF-x1z" id="tZS-AC-QoJ"/>
+                        <outlet property="nameLbl" destination="PgT-NA-KST" id="2Fq-iF-13r"/>
+                        <outlet property="specializationLbl" destination="Va7-fI-nBb" id="2ng-pR-TvK"/>
+                        <outlet property="worktimeLbl" destination="FeR-hF-x1z" id="M1r-mc-1v7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFe-58-3PL" userLabel="First Responder" sceneMemberID="firstResponder"/>

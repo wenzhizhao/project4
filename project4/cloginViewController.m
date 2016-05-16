@@ -7,8 +7,13 @@
 //
 
 #import "cloginViewController.h"
+#import <Parse/Parse.h>
 
 @interface cloginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *mobileField;
+@property (weak, nonatomic) IBOutlet UITextField *passField;
+- (IBAction)loginBtn:(id)sender;
+
 
 @end
 
@@ -20,4 +25,17 @@
 }
 
 
+- (IBAction)loginBtn:(id)sender {
+    PFQuery *pwdQuery = [PFQuery queryWithClassName:@"Patients"];
+    [pwdQuery whereKey:@"Mobile" equalTo:self.mobileField.text];
+    [pwdQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            if ([self.passField.text isEqualToString:[[objects lastObject] valueForKey:@"Password"]]) {
+                //pop to cpick vc
+            }
+
+        }
+    }];
+    
+}
 @end
