@@ -22,13 +22,11 @@
 		D79321E81CE67F0F00ED9077 /* DocotorMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321E71CE67F0F00ED9077 /* DocotorMainViewController.m */; };
 		D79321EA1CE6821900ED9077 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321E91CE6821900ED9077 /* Calendar-25.png */; };
 		D79321EC1CE6836800ED9077 /* medical.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321EB1CE6836800ED9077 /* medical.png */; };
-		D79321EE1CE683AB00ED9077 /* prifile-pic.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321ED1CE683AB00ED9077 /* prifile-pic.png */; };
 		D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F01CE6874200ED9077 /* MyCalendarViewController.m */; };
 		D79321F41CE6875200ED9077 /* MyAppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F31CE6875200ED9077 /* MyAppointmentsViewController.m */; };
 		D79321F71CE93A1800ED9077 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F61CE93A1800ED9077 /* NavigationViewController.m */; };
 		D79321FF1CE98E4A00ED9077 /* Bleach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321F81CE98E4A00ED9077 /* Bleach.jpg */; };
 		D79322001CE98E4A00ED9077 /* Itachi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321F91CE98E4A00ED9077 /* Itachi.jpg */; };
-		D79322011CE98E4A00ED9077 /* medical copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321FA1CE98E4A00ED9077 /* medical copy.png */; };
 		D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FB1CE98E4A00ED9077 /* Naruto.jpg */; };
 		D79322041CE98E4A00ED9077 /* Sasuke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */; };
 		D79322051CE98E4A00ED9077 /* superman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321FE1CE98E4A00ED9077 /* superman.jpg */; };
@@ -60,7 +58,6 @@
 		D79321E71CE67F0F00ED9077 /* DocotorMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocotorMainViewController.m; sourceTree = "<group>"; };
 		D79321E91CE6821900ED9077 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
 		D79321EB1CE6836800ED9077 /* medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical.png; sourceTree = "<group>"; };
-		D79321ED1CE683AB00ED9077 /* prifile-pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prifile-pic.png"; sourceTree = "<group>"; };
 		D79321EF1CE6874200ED9077 /* MyCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalendarViewController.h; sourceTree = "<group>"; };
 		D79321F01CE6874200ED9077 /* MyCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalendarViewController.m; sourceTree = "<group>"; };
 		D79321F21CE6875200ED9077 /* MyAppointmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppointmentsViewController.h; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		D79321F61CE93A1800ED9077 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		D79321F81CE98E4A00ED9077 /* Bleach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bleach.jpg; sourceTree = "<group>"; };
 		D79321F91CE98E4A00ED9077 /* Itachi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Itachi.jpg; sourceTree = "<group>"; };
-		D79321FA1CE98E4A00ED9077 /* medical copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medical copy.png"; sourceTree = "<group>"; };
 		D79321FB1CE98E4A00ED9077 /* Naruto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Naruto.jpg; sourceTree = "<group>"; };
 		D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sasuke.jpg; sourceTree = "<group>"; };
 		D79321FE1CE98E4A00ED9077 /* superman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superman.jpg; sourceTree = "<group>"; };
@@ -188,11 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				D79321F91CE98E4A00ED9077 /* Itachi.jpg */,
-				D79321FA1CE98E4A00ED9077 /* medical copy.png */,
 				D79321FB1CE98E4A00ED9077 /* Naruto.jpg */,
 				D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */,
 				D79321FE1CE98E4A00ED9077 /* superman.jpg */,
-				D79321ED1CE683AB00ED9077 /* prifile-pic.png */,
 				D79321EB1CE6836800ED9077 /* medical.png */,
 				D79321E91CE6821900ED9077 /* Calendar-25.png */,
 				D79321F81CE98E4A00ED9077 /* Bleach.jpg */,
@@ -265,14 +259,12 @@
 				D79322041CE98E4A00ED9077 /* Sasuke.jpg in Resources */,
 				D79322001CE98E4A00ED9077 /* Itachi.jpg in Resources */,
 				D79322051CE98E4A00ED9077 /* superman.jpg in Resources */,
-				D79321EE1CE683AB00ED9077 /* prifile-pic.png in Resources */,
 				D79321D11CE6402000ED9077 /* Storyboard.storyboard in Resources */,
 				D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */,
 				4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */,
 				D79321EA1CE6821900ED9077 /* Calendar-25.png in Resources */,
 				4E15665A1CE62AEE0083CA26 /* Main.storyboard in Resources */,
 				D79321EC1CE6836800ED9077 /* medical.png in Resources */,
-				D79322011CE98E4A00ED9077 /* medical copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
