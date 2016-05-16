@@ -17,6 +17,10 @@
 		4E1566621CE62AEE0083CA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1566601CE62AEE0083CA26 /* LaunchScreen.storyboard */; };
 		4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */; };
 		4E1566751CE8CCBA0083CA26 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1566741CE8CCBA0083CA26 /* Storyboard.storyboard */; };
+		4E1566781CE97D390083CA26 /* cloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1566771CE97D390083CA26 /* cloginViewController.m */; };
+		4E15667B1CE97DE80083CA26 /* cpickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15667A1CE97DE80083CA26 /* cpickViewController.m */; };
+		4E15667E1CE97E8E0083CA26 /* clistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15667D1CE97E8E0083CA26 /* clistViewController.m */; };
+		4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1566801CE981D20083CA26 /* cDocDetailsViewController.m */; };
 		D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321D31CE6404B00ED9077 /* customerViewController.m */; };
 		D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321DE1CE66F6F00ED9077 /* SignInViewController.m */; };
 		D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321E41CE67BE600ED9077 /* SignUpViewController.m */; };
@@ -44,6 +48,14 @@
 		4E1566691CE673CE0083CA26 /* customerregisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customerregisterViewController.h; sourceTree = "<group>"; };
 		4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customerregisterViewController.m; sourceTree = "<group>"; };
 		4E1566741CE8CCBA0083CA26 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		4E1566761CE97D390083CA26 /* cloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cloginViewController.h; sourceTree = "<group>"; };
+		4E1566771CE97D390083CA26 /* cloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cloginViewController.m; sourceTree = "<group>"; };
+		4E1566791CE97DE80083CA26 /* cpickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpickViewController.h; sourceTree = "<group>"; };
+		4E15667A1CE97DE80083CA26 /* cpickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cpickViewController.m; sourceTree = "<group>"; };
+		4E15667C1CE97E8E0083CA26 /* clistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clistViewController.h; sourceTree = "<group>"; };
+		4E15667D1CE97E8E0083CA26 /* clistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clistViewController.m; sourceTree = "<group>"; };
+		4E15667F1CE981D20083CA26 /* cDocDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cDocDetailsViewController.h; sourceTree = "<group>"; };
+		4E1566801CE981D20083CA26 /* cDocDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cDocDetailsViewController.m; sourceTree = "<group>"; };
 		777A424D6CAD81F490F5EA62 /* Pods-project4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.debug.xcconfig"; sourceTree = "<group>"; };
 		D79321D21CE6404B00ED9077 /* customerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customerViewController.h; sourceTree = "<group>"; };
 		D79321D31CE6404B00ED9077 /* customerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customerViewController.m; sourceTree = "<group>"; };
@@ -142,6 +154,14 @@
 				4E1566691CE673CE0083CA26 /* customerregisterViewController.h */,
 				4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */,
 				4E1566741CE8CCBA0083CA26 /* Storyboard.storyboard */,
+				4E1566761CE97D390083CA26 /* cloginViewController.h */,
+				4E1566771CE97D390083CA26 /* cloginViewController.m */,
+				4E1566791CE97DE80083CA26 /* cpickViewController.h */,
+				4E15667A1CE97DE80083CA26 /* cpickViewController.m */,
+				4E15667C1CE97E8E0083CA26 /* clistViewController.h */,
+				4E15667D1CE97E8E0083CA26 /* clistViewController.m */,
+				4E15667F1CE981D20083CA26 /* cDocDetailsViewController.h */,
+				4E1566801CE981D20083CA26 /* cDocDetailsViewController.m */,
 			);
 			name = Customer;
 			sourceTree = "<group>";
@@ -298,9 +318,13 @@
 				4E15665D1CE62AEE0083CA26 /* project4.xcdatamodeld in Sources */,
 				4E1566571CE62AEE0083CA26 /* ViewController.m in Sources */,
 				4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */,
+				4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */,
+				4E1566781CE97D390083CA26 /* cloginViewController.m in Sources */,
 				D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */,
 				4E1566541CE62AEE0083CA26 /* AppDelegate.m in Sources */,
 				D79321E81CE67F0F00ED9077 /* DocotorMainViewController.m in Sources */,
+				4E15667E1CE97E8E0083CA26 /* clistViewController.m in Sources */,
+				4E15667B1CE97DE80083CA26 /* cpickViewController.m in Sources */,
 				D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */,
 				D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */,
 				D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */,
