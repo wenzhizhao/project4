@@ -10,4 +10,7 @@
 
 @interface cDocDetailsViewController : UIViewController
 
+@property(nonatomic)NSString *passedString;
+
+
 @end

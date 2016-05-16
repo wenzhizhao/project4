@@ -7,8 +7,12 @@
 //
 
 #import "cpickViewController.h"
+#import "clistViewController.h"
 
 @interface cpickViewController ()
+
+
+- (IBAction)button_tapped:(UIButton *)sender;
 
 @end
 
@@ -17,7 +21,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 
+- (IBAction)button_tapped:(UIButton *)sender {
+    clistViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell_Clist"];
+    
+    switch (sender.tag) {
+        case 101:
+            [vc setGotString:@"CARDIOLOGISTS"];
+            break;
+        case 102:
+            [vc setGotString:@"DENTISTS"];
+            break;
+        
+        case 103:
+            [vc setGotString:@"DERMATOLOGISTS"];
+            break;
+        case 104:
+            [vc setGotString:@"GYNAECOLOGISTS"];
+            break;
+        case 105:
+            [vc setGotString:@"OPHTHALMOLOGISTS"];
+            break;
+            
+        case 106:
+            [vc setGotString:@"PSYCHOLOGISTS"];
+            break;
+            
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
 @end

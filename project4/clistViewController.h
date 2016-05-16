@@ -10,4 +10,6 @@
 
 @interface clistViewController : UIViewController
 
+@property(nonatomic)NSString *gotString;
+
 @end
