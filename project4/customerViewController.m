@@ -7,7 +7,8 @@
 //
 
 #import "customerViewController.h"
-
+#import "customerregisterViewController.h"
+#import "cloginViewController.h"
 @interface customerViewController ()
 
 @end
@@ -17,21 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)tempJump:(id)sender {
+//    UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    customerregisterViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"customerregisterViewController"];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self presentViewController:vc animated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)tempsignIn:(id)sender {
+    cloginViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cloginViewController"];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    [self presentViewController:vc animated:YES completion:nil];
 }
-*/
 
 @end
