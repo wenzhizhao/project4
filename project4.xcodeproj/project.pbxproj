@@ -18,9 +18,14 @@
 		4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15666A1CE673CE0083CA26 /* customerregisterViewController.m */; };
 		4E1566751CE8CCBA0083CA26 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1566741CE8CCBA0083CA26 /* Storyboard.storyboard */; };
 		4E1566781CE97D390083CA26 /* cloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1566771CE97D390083CA26 /* cloginViewController.m */; };
-		4E15667B1CE97DE80083CA26 /* cpickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15667A1CE97DE80083CA26 /* cpickViewController.m */; };
-		4E15667E1CE97E8E0083CA26 /* clistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E15667D1CE97E8E0083CA26 /* clistViewController.m */; };
 		4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1566801CE981D20083CA26 /* cDocDetailsViewController.m */; };
+		4E1F52911CEA236A008011CB /* cPickingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52901CEA236A008011CB /* cPickingViewController.m */; };
+		4E1F52941CEA2467008011CB /* cListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52931CEA2467008011CB /* cListingViewController.m */; };
+		4E1F52991CEA3810008011CB /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52961CEA3810008011CB /* MJPopupBackgroundView.m */; };
+		4E1F529A1CEA3810008011CB /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52981CEA3810008011CB /* UIViewController+MJPopupViewController.m */; };
+		4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */; };
+		4E1F52A11CEA3A1D008011CB /* MJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F529F1CEA3A1D008011CB /* MJDetailViewController.m */; };
+		4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */; };
 		D39F8C3B1CE9956000D715CC /* ClistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */; };
 		D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321D31CE6404B00ED9077 /* customerViewController.m */; };
 		D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321DE1CE66F6F00ED9077 /* SignInViewController.m */; };
@@ -54,12 +59,21 @@
 		4E1566741CE8CCBA0083CA26 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		4E1566761CE97D390083CA26 /* cloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cloginViewController.h; sourceTree = "<group>"; };
 		4E1566771CE97D390083CA26 /* cloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cloginViewController.m; sourceTree = "<group>"; };
-		4E1566791CE97DE80083CA26 /* cpickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpickViewController.h; sourceTree = "<group>"; };
-		4E15667A1CE97DE80083CA26 /* cpickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cpickViewController.m; sourceTree = "<group>"; };
-		4E15667C1CE97E8E0083CA26 /* clistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clistViewController.h; sourceTree = "<group>"; };
-		4E15667D1CE97E8E0083CA26 /* clistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clistViewController.m; sourceTree = "<group>"; };
 		4E15667F1CE981D20083CA26 /* cDocDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cDocDetailsViewController.h; sourceTree = "<group>"; };
 		4E1566801CE981D20083CA26 /* cDocDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cDocDetailsViewController.m; sourceTree = "<group>"; };
+		4E1F528F1CEA236A008011CB /* cPickingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cPickingViewController.h; sourceTree = "<group>"; };
+		4E1F52901CEA236A008011CB /* cPickingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cPickingViewController.m; sourceTree = "<group>"; };
+		4E1F52921CEA2467008011CB /* cListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cListingViewController.h; sourceTree = "<group>"; };
+		4E1F52931CEA2467008011CB /* cListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cListingViewController.m; sourceTree = "<group>"; };
+		4E1F52951CEA3810008011CB /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
+		4E1F52961CEA3810008011CB /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
+		4E1F52971CEA3810008011CB /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
+		4E1F52981CEA3810008011CB /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+		4E1F529B1CEA38B6008011CB /* cAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cAppointmentViewController.h; sourceTree = "<group>"; };
+		4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cAppointmentViewController.m; sourceTree = "<group>"; };
+		4E1F529E1CEA3A1D008011CB /* MJDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDetailViewController.h; sourceTree = "<group>"; };
+		4E1F529F1CEA3A1D008011CB /* MJDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDetailViewController.m; sourceTree = "<group>"; };
+		4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MJDetailViewController.xib; sourceTree = "<group>"; };
 		777A424D6CAD81F490F5EA62 /* Pods-project4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.debug.xcconfig"; sourceTree = "<group>"; };
 		D39F8C391CE9956000D715CC /* ClistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClistTableViewCell.h; sourceTree = "<group>"; };
 		D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClistTableViewCell.m; sourceTree = "<group>"; };
@@ -165,6 +179,13 @@
 		D79321DB1CE66E4700ED9077 /* Customer */ = {
 			isa = PBXGroup;
 			children = (
+				4E1F529E1CEA3A1D008011CB /* MJDetailViewController.h */,
+				4E1F529F1CEA3A1D008011CB /* MJDetailViewController.m */,
+				4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */,
+				4E1F52951CEA3810008011CB /* MJPopupBackgroundView.h */,
+				4E1F52961CEA3810008011CB /* MJPopupBackgroundView.m */,
+				4E1F52971CEA3810008011CB /* UIViewController+MJPopupViewController.h */,
+				4E1F52981CEA3810008011CB /* UIViewController+MJPopupViewController.m */,
 				D79321D21CE6404B00ED9077 /* customerViewController.h */,
 				D79321D31CE6404B00ED9077 /* customerViewController.m */,
 				4E1566691CE673CE0083CA26 /* customerregisterViewController.h */,
@@ -174,12 +195,14 @@
 				D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */,
 				4E1566761CE97D390083CA26 /* cloginViewController.h */,
 				4E1566771CE97D390083CA26 /* cloginViewController.m */,
-				4E1566791CE97DE80083CA26 /* cpickViewController.h */,
-				4E15667A1CE97DE80083CA26 /* cpickViewController.m */,
-				4E15667C1CE97E8E0083CA26 /* clistViewController.h */,
-				4E15667D1CE97E8E0083CA26 /* clistViewController.m */,
+				4E1F528F1CEA236A008011CB /* cPickingViewController.h */,
+				4E1F52901CEA236A008011CB /* cPickingViewController.m */,
+				4E1F52921CEA2467008011CB /* cListingViewController.h */,
+				4E1F52931CEA2467008011CB /* cListingViewController.m */,
 				4E15667F1CE981D20083CA26 /* cDocDetailsViewController.h */,
 				4E1566801CE981D20083CA26 /* cDocDetailsViewController.m */,
+				4E1F529B1CEA38B6008011CB /* cAppointmentViewController.h */,
+				4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */,
 			);
 			name = Customer;
 			sourceTree = "<group>";
@@ -295,6 +318,11 @@
 			files = (
 				D79321FF1CE98E4A00ED9077 /* Bleach.jpg in Resources */,
 				4E1566621CE62AEE0083CA26 /* LaunchScreen.storyboard in Resources */,
+				D79322041CE98E4A00ED9077 /* Sasuke.jpg in Resources */,
+				D79322001CE98E4A00ED9077 /* Itachi.jpg in Resources */,
+				4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */,
+				D79322051CE98E4A00ED9077 /* superman.jpg in Resources */,
+				D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */,
 				4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */,
 				D79321EA1CE6821900ED9077 /* Calendar-25.png in Resources */,
 				4E1566751CE8CCBA0083CA26 /* Storyboard.storyboard in Resources */,
@@ -358,6 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1F52991CEA3810008011CB /* MJPopupBackgroundView.m in Sources */,
+				4E1F529A1CEA3810008011CB /* UIViewController+MJPopupViewController.m in Sources */,
 				D79321F41CE6875200ED9077 /* MyAppointmentsViewController.m in Sources */,
 				D39F8C3B1CE9956000D715CC /* ClistTableViewCell.m in Sources */,
 				4E15665D1CE62AEE0083CA26 /* project4.xcdatamodeld in Sources */,
@@ -366,17 +396,19 @@
 				4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */,
 				4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */,
 				4E1566781CE97D390083CA26 /* cloginViewController.m in Sources */,
+				4E1F52941CEA2467008011CB /* cListingViewController.m in Sources */,
 				D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */,
 				4E1566541CE62AEE0083CA26 /* AppDelegate.m in Sources */,
 				D79321E81CE67F0F00ED9077 /* DocotorMainViewController.m in Sources */,
-				4E15667E1CE97E8E0083CA26 /* clistViewController.m in Sources */,
-				4E15667B1CE97DE80083CA26 /* cpickViewController.m in Sources */,
+				D793220E1CE999E000ED9077 /* CollectionViewCell.m in Sources */,
+				4E1F52911CEA236A008011CB /* cPickingViewController.m in Sources */,
 				D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */,
 				D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */,
 				D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */,
 				D79322111CEA22B300ED9077 /* CustomCollectionViewCell.m in Sources */,
 				4E1566511CE62AEE0083CA26 /* main.m in Sources */,
 				D79321F71CE93A1800ED9077 /* NavigationViewController.m in Sources */,
+				4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

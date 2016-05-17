@@ -7,7 +7,8 @@
 //
 
 #import "cloginViewController.h"
-#import "cpickViewController.h"
+#import "cPickingViewController.h"
+
 #import <Parse/Parse.h>
 
 @interface cloginViewController ()
@@ -33,8 +34,9 @@
         if (!error) {
             if ([self.passField.text isEqualToString:[[objects lastObject] valueForKey:@"Password"]]) {
                 //pop to cpick vc
-                cpickViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cpickViewController"];
-                [self presentViewController:vc  animated:YES completion:nil];
+                cPickingViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cPickingViewController"];
+//                [self presentViewController:vc  animated:YES completion:nil];
+                [self.navigationController pushViewController:vc animated:YES];
             }
 
         }

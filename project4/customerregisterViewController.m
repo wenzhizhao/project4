@@ -33,6 +33,7 @@
 
 - (IBAction)cancelBtn:(id)sender {
     //pop the vc
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)submitBtn:(id)sender {
@@ -69,6 +70,8 @@
                     }];
                     
                     //pop the vc here
+                    sleep(1);
+                    [self.navigationController popViewControllerAnimated:YES];
                 }
             }
         }];
@@ -79,6 +82,7 @@
         }];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
+        
     }
 }
 -(BOOL) isPasswordValid:(NSString *)pwd {
