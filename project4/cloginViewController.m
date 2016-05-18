@@ -46,4 +46,26 @@
     }];
     
 }
+- (IBAction)retrievePassword:(id)sender {
+    PFQuery *passwordQuery = [PFQuery queryWithClassName:@"Patients"];
+    [passwordQuery whereKey:@"Mobile" equalTo:self.mobileField.text];
+    [passwordQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        if (!error) {
+            
+            
+            UIAlertController *password = [UIAlertController alertControllerWithTitle:@"Your Password" message:[objects.lastObject valueForKey:@"Password"] preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *OK = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [password addAction:OK];
+            [self presentViewController:password animated:YES completion:nil];
+            [self.passField setText:[objects.lastObject valueForKey:@"Password"]];
+
+            
+        }
+    }];
+}
+
+
 @end

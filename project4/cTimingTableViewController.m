@@ -6,18 +6,18 @@
 //  Copyright © 2016 Wenzhi Zhao. All rights reserved.
 //
 
-#import "cTimeTableViewController.h"
+#import "cTimingTableViewController.h"
 #import "MJDetailViewController.h"
 #import "UIViewController+MJPopupViewController.h"
+#import "mmViewController.h"
 
-
-@interface cTimeTableViewController ()
+@interface cTimingTableViewController ()
 @property (strong, nonatomic) NSMutableDictionary *unavailableTime;
 @property (strong, nonatomic) NSMutableArray *availableArray;
 @property (strong, nonatomic) NSMutableArray *stringArray;
 @end
 
-@implementation cTimeTableViewController
+@implementation cTimingTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -269,7 +269,7 @@
         [self presentViewController:vc animated:YES completion:nil];
     }
     else{
-        MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
+        mmViewController *detailViewController = [[mmViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
         detailViewController.dataString = [NSString stringWithFormat:@"%@",self.dateStr];
         detailViewController.patientNo = [self.patientNo mutableCopy];
         detailViewController.docNo = [self.docNumber mutableCopy];

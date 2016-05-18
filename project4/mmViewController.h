@@ -8,13 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MJDetailViewController : UIViewController
+@interface mmViewController : UIViewController
 
-
-
-
-@property (weak, nonatomic) IBOutlet UILabel *popDate;
-@property (strong, nonatomic) NSString *dataString;
 
 
 
