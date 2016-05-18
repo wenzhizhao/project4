@@ -36,6 +36,9 @@
                 //pop to cpick vc
                 cPickingViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cPickingViewController"];
 //                [self presentViewController:vc  animated:YES completion:nil];
+                vc.patientNo = [self.mobileField.text mutableCopy];
+//                [self presentViewController:vc  animated:YES completion:nil];
+
                 [self.navigationController pushViewController:vc animated:YES];
             }
 

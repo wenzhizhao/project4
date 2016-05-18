@@ -8,11 +8,12 @@
 
 #import "cPickingViewController.h"
 #import "cListingViewController.h"
-
+#import "cCenterViewController.h"
 @interface cPickingViewController ()
 
 
 - (IBAction)button_tapped:(UIButton *)sender;
+
 
 @end
 
@@ -55,9 +56,15 @@
         default:
             break;
     }
-        [self.navigationController pushViewController:vc animated:YES];
-//    [self presentViewController:vc animated:YES completion:nil];
+    vc.patientNo = [self.patientNo mutableCopy];
+    [self.navigationController pushViewController:vc animated:YES];
     
+}
+
+- (IBAction)careCenterBtn:(id)sender {
+    cCenterViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cCenterViewController"];
+    vc.patientNo = [self.patientNo mutableCopy];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

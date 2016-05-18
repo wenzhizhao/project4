@@ -11,6 +11,6 @@
 @interface cDocDetailsViewController : UIViewController
 
 @property(nonatomic)NSString *passedString;
-
+@property(strong, nonatomic)NSString *patientNo;
 
 @end

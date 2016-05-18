@@ -9,10 +9,13 @@
 #import "cAppointmentViewController.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "MJDetailViewController.h"
+#import "cTimeTableViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <Parse/Parse.h>
 
 @interface cAppointmentViewController ()
-
+@property (strong, nonatomic) NSArray *ticketArray;
+@property (strong, nonatomic) NSString *period;
 @end
 
 
@@ -55,7 +58,9 @@ NSArray * hadSession;
     thisMonth--;
     [self removeTags];
     [self updateCalNow];
+    
 }
+
 
 -(void) removeTags{
     int x=1;
@@ -195,7 +200,7 @@ NSArray * hadSession;
             [addProject setEnabled:YES];
             addProject.backgroundColor = [UIColor blueColor];
             [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-
+            
         }
         else{
             [addProject setEnabled:NO];
@@ -236,11 +241,33 @@ NSArray * hadSession;
 
     //   ----- Launch a  POPUP SCREEN -----------
     
-    
-    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
-    detailViewController.dataString = [dateFormat stringFromDate:newDate];
-    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
+    PFQuery *docQuery = [PFQuery queryWithClassName:@"Billboard"];
+    [docQuery whereKey:@"docNo" equalTo:self.docNumber];
+    NSString *datastr = [dateFormat stringFromDate:newDate];
+    [docQuery whereKey:@"AppointmentDate" equalTo:datastr];
+    [docQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.ticketArray = [objects mutableCopy];
+            cTimeTableViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cTimeTableViewController"];
+            vc.ticketArray = [self.ticketArray mutableCopy];
+            vc.docNumber = [self.docNumber mutableCopy];
+            vc.period = [self.availableTime mutableCopy];
+            vc.dateStr = [dateFormat stringFromDate:newDate];
+            vc.patientNo = [self.patientNo mutableCopy];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.navigationController pushViewController:vc animated:YES];
+            });
+            
+            
+        }
+    }];
 
+
+//    
+//    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
+//    detailViewController.dataString = [dateFormat stringFromDate:newDate];
+//    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
+    
 }
 
 

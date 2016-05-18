@@ -77,6 +77,7 @@
     PFObject *obj = [self.docArry objectAtIndex:indexPath.row];
     vc.passedString = [obj valueForKey:@"Mobile"];
     NSLog(@"%@",vc.passedString);
+    vc.patientNo = [self.patientNo mutableCopy];
         [self.navigationController pushViewController:vc animated:YES];
 //    [self presentViewController:vc animated:YES completion:nil];
     
