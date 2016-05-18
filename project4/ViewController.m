@@ -25,7 +25,7 @@
 }
 - (IBAction)docotorEntrece:(id)sender {
     SignInViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SignInViewController"];
-    [self presentViewController:controller animated:YES completion:nil];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)nextStoryBoard:(id)sender {

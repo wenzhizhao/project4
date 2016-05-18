@@ -8,7 +8,7 @@
 
 #import "SignInViewController.h"
 #import "SignUpViewController.h"
-#import "DocotorMainViewController.h"
+#import "DoctorNavigationViewController.h"
 #import "AppDelegate.h"
 @interface SignInViewController ()
 - (IBAction)signInBtn_pressed:(UIButton *)sender;
@@ -23,6 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    // for test log in automatically
+    _mobileNumberTextfield.text = @"3333333333";
+    _passwordTextFied.text = @"Zaq123";
+    
+    
     
     // Do any additional setup after loading the view.
 }
@@ -51,13 +56,16 @@
     
     PFQuery *passwordQuery = [PFQuery queryWithClassName:@"Docotors"];
     [passwordQuery whereKey:@"Mobile" equalTo:_mobileNumberTextfield.text];
-[passwordQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+    [passwordQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
     if (!error) {
         
         if ([_passwordTextFied.text isEqualToString:[objects.lastObject valueForKey:@"Password"]]) {
-            DocotorMainViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DocotorMainViewController"];
-            
-            [self.navigationController pushViewController:controller animated:YES];
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setObject:_mobileNumberTextfield.text forKey:@"CurrentMobile"];
+            [defaults synchronize];
+            DoctorNavigationViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DoctorNavigationViewController"];
+            [self presentViewController:controller animated:NO completion:nil];
+
         }else{
             UIAlertController *password = [UIAlertController alertControllerWithTitle:@"" message:@"Mobile number and password are not match" preferredStyle:UIAlertControllerStyleAlert];
             

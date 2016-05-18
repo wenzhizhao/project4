@@ -12,11 +12,11 @@
 
 
 
+//
+//@property (weak, nonatomic) IBOutlet UILabel *popDate;
+//@property (strong, nonatomic) NSString *dataString;
+//
 
-@property (weak, nonatomic) IBOutlet UILabel *popDate;
-@property (strong, nonatomic) NSString *dataString;
-@property (strong, nonatomic) NSString *patientNo;
-@property (strong, nonatomic) NSString *docNo;
-@property (strong, nonatomic) NSString *period;
+
 
 @end
