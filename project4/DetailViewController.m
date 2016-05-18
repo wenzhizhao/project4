@@ -38,14 +38,7 @@
     _DateLabel.text = [NSString stringWithFormat:@"Date: %@",[_dict valueForKey:@"AppointmentDate"]];
     
     _appointmentStatus.text = [[_dict valueForKey:@"confirmedByDoc"] isEqual:@(1)]? @"Status: Confirmed":@"Status: Waiting for confirmation";
-    
     _confirmBtn_outlet.hidden = [[_dict valueForKey:@"confirmedByDoc"] isEqual:@(1)]? true:false;
-    
-    
-    
-    
-    
-    
     
     // Do any additional setup after loading the view.
 }

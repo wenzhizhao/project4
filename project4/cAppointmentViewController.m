@@ -248,6 +248,7 @@ NSArray * hadSession;
     [docQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             self.ticketArray = [objects mutableCopy];
+            
             cTimeTableViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"cTimeTableViewController"];
             vc.ticketArray = [self.ticketArray mutableCopy];
             vc.docNumber = [self.docNumber mutableCopy];
@@ -263,10 +264,10 @@ NSArray * hadSession;
     }];
     
     
-    //
-    //    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
-    //    detailViewController.dataString = [dateFormat stringFromDate:newDate];
-    //    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
+    
+//        MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
+//        detailViewController.dataString = [dateFormat stringFromDate:newDate];
+//        [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
     
 }
 

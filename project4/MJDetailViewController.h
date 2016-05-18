@@ -12,10 +12,10 @@
 
 
 
-//
-//@property (weak, nonatomic) IBOutlet UILabel *popDate;
-//@property (strong, nonatomic) NSString *dataString;
-//
+
+@property (weak, nonatomic) IBOutlet UILabel *popDate;
+@property (strong, nonatomic) NSString *dataString;
+
 
 
 
