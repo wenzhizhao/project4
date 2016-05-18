@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZY-vq-AQx">
-                                <rect key="frame" x="135" y="142" width="50" height="30"/>
-                                <state key="normal" title="sign up"/>
-                                <connections>
-                                    <action selector="tempJump:" destination="psJ-7d-3ru" eventType="touchUpInside" id="yYA-uB-lKL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6M-lt-Hfp">
-                                <rect key="frame" x="138" y="199" width="45" height="30"/>
+                                <rect key="frame" x="135" y="131" width="45" height="30"/>
                                 <state key="normal" title="sign in"/>
                                 <connections>
                                     <action selector="tempsignIn:" destination="psJ-7d-3ru" eventType="touchUpInside" id="LA3-bi-dN4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZY-vq-AQx">
+                                <rect key="frame" x="130" y="233" width="50" height="30"/>
+                                <state key="normal" title="sign up"/>
+                                <connections>
+                                    <action selector="tempJump:" destination="psJ-7d-3ru" eventType="touchUpInside" id="yYA-uB-lKL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,6 +176,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83J-NC-OKT">
                                 <rect key="frame" x="191" y="371" width="119" height="30"/>
                                 <state key="normal" title="Forgot paswd"/>
+                                <connections>
+                                    <action selector="retrievePassword:" destination="YUG-VX-HEx" eventType="touchUpInside" id="MI4-RN-qKW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -479,10 +482,10 @@
             </objects>
             <point key="canvasLocation" x="1695" y="914"/>
         </scene>
-        <!--Time Table View Controller-->
+        <!--Timing Table View Controller-->
         <scene sceneID="CSe-qr-vdY">
             <objects>
-                <tableViewController storyboardIdentifier="cTimeTableViewController" id="owH-nd-BYt" customClass="cTimeTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="cTimingTableViewController" id="owH-nd-BYt" customClass="cTimingTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pbw-Gk-qN6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

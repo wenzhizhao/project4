@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MJDetailViewController : UIViewController
+@interface mmViewController : UIViewController
 
 
 

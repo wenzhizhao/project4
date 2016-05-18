@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 RWS. All rights reserved.
 //
 
-#import "MJDetailViewController.h"
+#import "mmViewController.h"
 #import "ViewController.h"
 #import <Parse/Parse.h>
-@interface MJDetailViewController ()
+@interface mmViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *warningLbl;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @end
 
-@implementation MJDetailViewController
+@implementation mmViewController
 @synthesize popDate;
 
 - (void)viewDidLoad {

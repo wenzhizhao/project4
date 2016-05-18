@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2E534909717C73EB0D637043 /* libPods-project4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D856D8536A237926F0B0F4C /* libPods-project4.a */; };
-		4E0D6B431CEB6A47006C2F85 /* cTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D6B421CEB6A47006C2F85 /* cTimeTableViewController.m */; };
 		4E0D6B5C1CEBCE2F006C2F85 /* cCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D6B5B1CEBCE2F006C2F85 /* cCenterViewController.m */; };
 		4E1566511CE62AEE0083CA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1566501CE62AEE0083CA26 /* main.m */; };
 		4E1566541CE62AEE0083CA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1566531CE62AEE0083CA26 /* AppDelegate.m */; };
@@ -28,6 +27,9 @@
 		4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */; };
 		4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */; };
 		4E4137721CECD92C0046AF09 /* singletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4137711CECD92C0046AF09 /* singletonClass.m */; };
+		4E4137751CECFDAF0046AF09 /* cTimingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4137741CECFDAF0046AF09 /* cTimingTableViewController.m */; };
+		4E41377C1CED02470046AF09 /* mmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E41377A1CED02470046AF09 /* mmViewController.m */; };
+		4E41377D1CED02470046AF09 /* mmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E41377B1CED02470046AF09 /* mmViewController.xib */; };
 		D39F8C3B1CE9956000D715CC /* ClistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */; };
 		D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321D31CE6404B00ED9077 /* customerViewController.m */; };
 		D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321DE1CE66F6F00ED9077 /* SignInViewController.m */; };
@@ -89,6 +91,11 @@
 		4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MJDetailViewController.xib; sourceTree = "<group>"; };
 		4E4137701CECD92C0046AF09 /* singletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singletonClass.h; sourceTree = "<group>"; };
 		4E4137711CECD92C0046AF09 /* singletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singletonClass.m; sourceTree = "<group>"; };
+		4E4137731CECFDAF0046AF09 /* cTimingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimingTableViewController.h; sourceTree = "<group>"; };
+		4E4137741CECFDAF0046AF09 /* cTimingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cTimingTableViewController.m; sourceTree = "<group>"; };
+		4E4137791CED02470046AF09 /* mmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmViewController.h; sourceTree = "<group>"; };
+		4E41377A1CED02470046AF09 /* mmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmViewController.m; sourceTree = "<group>"; };
+		4E41377B1CED02470046AF09 /* mmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mmViewController.xib; sourceTree = "<group>"; };
 		777A424D6CAD81F490F5EA62 /* Pods-project4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.debug.xcconfig"; sourceTree = "<group>"; };
 		D39F8C391CE9956000D715CC /* ClistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClistTableViewCell.h; sourceTree = "<group>"; };
 		D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClistTableViewCell.m; sourceTree = "<group>"; };
@@ -229,8 +236,13 @@
 				4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */,
 				4E0D6B411CEB6A47006C2F85 /* cTimeTableViewController.h */,
 				4E0D6B421CEB6A47006C2F85 /* cTimeTableViewController.m */,
+				4E4137731CECFDAF0046AF09 /* cTimingTableViewController.h */,
+				4E4137741CECFDAF0046AF09 /* cTimingTableViewController.m */,
 				4E0D6B5A1CEBCE2F006C2F85 /* cCenterViewController.h */,
 				4E0D6B5B1CEBCE2F006C2F85 /* cCenterViewController.m */,
+				4E4137791CED02470046AF09 /* mmViewController.h */,
+				4E41377A1CED02470046AF09 /* mmViewController.m */,
+				4E41377B1CED02470046AF09 /* mmViewController.xib */,
 			);
 			name = Customer;
 			sourceTree = "<group>";
@@ -357,6 +369,7 @@
 				D7F88F991CECDAD100C9D4D0 /* doctor.jpg in Resources */,
 				4E1566621CE62AEE0083CA26 /* LaunchScreen.storyboard in Resources */,
 				4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */,
+				4E41377D1CED02470046AF09 /* mmViewController.xib in Resources */,
 				4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */,
 				D7E775151CEBAA3F00A456F3 /* medical.png in Resources */,
 				4E1566751CE8CCBA0083CA26 /* Storyboard.storyboard in Resources */,
@@ -430,6 +443,7 @@
 				4E1566571CE62AEE0083CA26 /* ViewController.m in Sources */,
 				D79322371CEA51CC00ED9077 /* MonthCollectionHeaderView.m in Sources */,
 				D7E775211CEBB4EC00A456F3 /* DoctorNavigationViewController.m in Sources */,
+				4E4137751CECFDAF0046AF09 /* cTimingTableViewController.m in Sources */,
 				4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */,
 				4E4137721CECD92C0046AF09 /* singletonClass.m in Sources */,
 				4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */,
@@ -443,6 +457,7 @@
 				D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */,
 				D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */,
 				D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */,
+				4E41377C1CED02470046AF09 /* mmViewController.m in Sources */,
 				D79322111CEA22B300ED9077 /* CustomCollectionViewCell.m in Sources */,
 				4E1566511CE62AEE0083CA26 /* main.m in Sources */,
 				D7E7751E1CEBB22E00A456F3 /* TimeListViewController.m in Sources */,

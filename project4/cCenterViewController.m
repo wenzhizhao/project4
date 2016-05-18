@@ -128,19 +128,28 @@
 
             [self.activityIndicatior startAnimating];
 
-            [_ticketArray removeObjectAtIndex:indexPath.row];
+//            [_ticketArray removeObjectAtIndex:indexPath.row];
             PFQuery *pwdQuery1 = [PFQuery queryWithClassName:@"Billboard"];
             [pwdQuery1 whereKey:@"objectId" equalTo:[self.idYesArray objectAtIndex:indexPath.row]];
 //            PFObject *obj = [[pwdQuery1 findObjects] lastObject];
             [pwdQuery1 findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
                 PFObject *obj = [objects lastObject];
                 [obj deleteInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-                        [self.tableView reloadData];
-                        [self.activityIndicatior stopAnimating];
-                        [self.indicatorView setHidden:YES];
-                    });
+                    if (succeeded) {
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [_ticketArray removeObjectAtIndex:indexPath.row];
+                            
+                            [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+                            [self.tableView reloadData];
+                            sleep(1.3);
+                            [self.activityIndicatior stopAnimating];
+                            [self.indicatorView setHidden:YES];
+                        });
+                    }else {
+                        
+                        NSLog(@"NOT SUCCESSFUL DELETE: %@",error);
+                    }
                 }];
             }];
 
