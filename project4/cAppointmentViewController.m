@@ -219,29 +219,29 @@ NSArray * hadSession;
  */
 
 
--(void) popupInfo: (id) sender {
-    UIButton* btn = (UIButton *) sender;
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:[btn.currentTitle integerValue]];
-    [components setMonth:thisMonth];
-    [components setYear:thisYear];
-    NSDate * newDate = [calendar dateFromComponents:components];
-    //Formats date to YYYY-MM-DD
-    NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyy-MM-dd"];
-    
-//    parseSpot3=@[@"p",[dateFormat stringFromDate:newDate]];
-    //compare above date to parse database. See if current user has an entry
-
-    //   ----- Launch a  POPUP SCREEN -----------
-    
-    
-    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
-    detailViewController.dataString = [dateFormat stringFromDate:newDate];
-    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
-
-}
+//-(void) popupInfo: (id) sender {
+//    UIButton* btn = (UIButton *) sender;
+//    NSCalendar *calendar = [NSCalendar currentCalendar];
+//    NSDateComponents *components = [[NSDateComponents alloc] init];
+//    [components setDay:[btn.currentTitle integerValue]];
+//    [components setMonth:thisMonth];
+//    [components setYear:thisYear];
+//    NSDate * newDate = [calendar dateFromComponents:components];
+//    //Formats date to YYYY-MM-DD
+//    NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
+//    [dateFormat setDateFormat:@"yyyy-MM-dd"];
+//    
+////    parseSpot3=@[@"p",[dateFormat stringFromDate:newDate]];
+//    //compare above date to parse database. See if current user has an entry
+//
+//    //   ----- Launch a  POPUP SCREEN -----------
+//    
+//    
+//    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
+//    detailViewController.dataString = [dateFormat stringFromDate:newDate];
+//    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
+//
+//}
 
 
 

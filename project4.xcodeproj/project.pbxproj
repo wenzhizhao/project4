@@ -24,21 +24,27 @@
 		4E1F52991CEA3810008011CB /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52961CEA3810008011CB /* MJPopupBackgroundView.m */; };
 		4E1F529A1CEA3810008011CB /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52981CEA3810008011CB /* UIViewController+MJPopupViewController.m */; };
 		4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */; };
-		4E1F52A11CEA3A1D008011CB /* MJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F529F1CEA3A1D008011CB /* MJDetailViewController.m */; };
 		4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */; };
 		D39F8C3B1CE9956000D715CC /* ClistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */; };
 		D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321D31CE6404B00ED9077 /* customerViewController.m */; };
 		D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321DE1CE66F6F00ED9077 /* SignInViewController.m */; };
 		D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321E41CE67BE600ED9077 /* SignUpViewController.m */; };
 		D79321E81CE67F0F00ED9077 /* DocotorMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321E71CE67F0F00ED9077 /* DocotorMainViewController.m */; };
-		D79321EA1CE6821900ED9077 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321E91CE6821900ED9077 /* Calendar-25.png */; };
-		D79321EC1CE6836800ED9077 /* medical.png in Resources */ = {isa = PBXBuildFile; fileRef = D79321EB1CE6836800ED9077 /* medical.png */; };
 		D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F01CE6874200ED9077 /* MyCalendarViewController.m */; };
 		D79321F41CE6875200ED9077 /* MyAppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F31CE6875200ED9077 /* MyAppointmentsViewController.m */; };
 		D79321F71CE93A1800ED9077 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321F61CE93A1800ED9077 /* NavigationViewController.m */; };
-		D79321FF1CE98E4A00ED9077 /* Bleach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D79321F81CE98E4A00ED9077 /* Bleach.jpg */; };
 		D79322111CEA22B300ED9077 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79322101CEA22B300ED9077 /* CustomCollectionViewCell.m */; };
 		D79322371CEA51CC00ED9077 /* MonthCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79322361CEA51CC00ED9077 /* MonthCollectionHeaderView.m */; };
+		D7E7750B1CEB9E6400A456F3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E7750A1CEB9E6400A456F3 /* DetailViewController.m */; };
+		D7E775151CEBAA3F00A456F3 /* medical.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7750E1CEBAA3F00A456F3 /* medical.png */; };
+		D7E775171CEBAA3F00A456F3 /* prifile-pic.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E775101CEBAA3F00A456F3 /* prifile-pic.png */; };
+		D7E7751B1CEBB0BD00A456F3 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E7751A1CEBB0BD00A456F3 /* Calendar-25.png */; };
+		D7E7751E1CEBB22E00A456F3 /* TimeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E7751D1CEBB22E00A456F3 /* TimeListViewController.m */; };
+		D7E775211CEBB4EC00A456F3 /* DoctorNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E775201CEBB4EC00A456F3 /* DoctorNavigationViewController.m */; };
+		D7E775241CEC03E900A456F3 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E775231CEC03E900A456F3 /* MyProfileViewController.m */; };
+		D7F88F951CECD65400C9D4D0 /* homeDoctor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F941CECD65400C9D4D0 /* homeDoctor.jpeg */; };
+		D7F88F991CECDAD100C9D4D0 /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F981CECDAD100C9D4D0 /* doctor.jpg */; };
+		D7F88F9B1CECDBFB00C9D4D0 /* Circled Left-52.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F9A1CECDBFB00C9D4D0 /* Circled Left-52.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,23 +91,30 @@
 		D79321E41CE67BE600ED9077 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		D79321E61CE67F0F00ED9077 /* DocotorMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocotorMainViewController.h; sourceTree = "<group>"; };
 		D79321E71CE67F0F00ED9077 /* DocotorMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocotorMainViewController.m; sourceTree = "<group>"; };
-		D79321E91CE6821900ED9077 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
-		D79321EB1CE6836800ED9077 /* medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical.png; sourceTree = "<group>"; };
 		D79321EF1CE6874200ED9077 /* MyCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalendarViewController.h; sourceTree = "<group>"; };
 		D79321F01CE6874200ED9077 /* MyCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalendarViewController.m; sourceTree = "<group>"; };
 		D79321F21CE6875200ED9077 /* MyAppointmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppointmentsViewController.h; sourceTree = "<group>"; };
 		D79321F31CE6875200ED9077 /* MyAppointmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppointmentsViewController.m; sourceTree = "<group>"; };
 		D79321F51CE93A1800ED9077 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		D79321F61CE93A1800ED9077 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
-		D79321F81CE98E4A00ED9077 /* Bleach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bleach.jpg; sourceTree = "<group>"; };
-		D79321F91CE98E4A00ED9077 /* Itachi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Itachi.jpg; sourceTree = "<group>"; };
-		D79321FB1CE98E4A00ED9077 /* Naruto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Naruto.jpg; sourceTree = "<group>"; };
-		D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sasuke.jpg; sourceTree = "<group>"; };
-		D79321FE1CE98E4A00ED9077 /* superman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superman.jpg; sourceTree = "<group>"; };
 		D793220F1CEA22B300ED9077 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		D79322101CEA22B300ED9077 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		D79322351CEA51CC00ED9077 /* MonthCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCollectionHeaderView.h; sourceTree = "<group>"; };
 		D79322361CEA51CC00ED9077 /* MonthCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCollectionHeaderView.m; sourceTree = "<group>"; };
+		D7E775091CEB9E6400A456F3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D7E7750A1CEB9E6400A456F3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D7E7750E1CEBAA3F00A456F3 /* medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical.png; sourceTree = "<group>"; };
+		D7E775101CEBAA3F00A456F3 /* prifile-pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prifile-pic.png"; sourceTree = "<group>"; };
+		D7E7751A1CEBB0BD00A456F3 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
+		D7E7751C1CEBB22E00A456F3 /* TimeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeListViewController.h; sourceTree = "<group>"; };
+		D7E7751D1CEBB22E00A456F3 /* TimeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeListViewController.m; sourceTree = "<group>"; };
+		D7E7751F1CEBB4EC00A456F3 /* DoctorNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorNavigationViewController.h; sourceTree = "<group>"; };
+		D7E775201CEBB4EC00A456F3 /* DoctorNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorNavigationViewController.m; sourceTree = "<group>"; };
+		D7E775221CEC03E900A456F3 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		D7E775231CEC03E900A456F3 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		D7F88F941CECD65400C9D4D0 /* homeDoctor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeDoctor.jpeg; sourceTree = "<group>"; };
+		D7F88F981CECDAD100C9D4D0 /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
+		D7F88F9A1CECDBFB00C9D4D0 /* Circled Left-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circled Left-52.png"; sourceTree = "<group>"; };
 		ED0B10EBDFEEF27E953D8339 /* Pods-project4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.release.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,11 +223,19 @@
 		D79321DC1CE66E7000ED9077 /* Docotor */ = {
 			isa = PBXGroup;
 			children = (
-				D79322061CE98EB500ED9077 /* ImageSets */,
 				4E1566581CE62AEE0083CA26 /* Main.storyboard */,
+				D79322061CE98EB500ED9077 /* ImageSets */,
 				D79322381CEA523300ED9077 /* MyCalender */,
 				D79321F51CE93A1800ED9077 /* NavigationViewController.h */,
 				D79321F61CE93A1800ED9077 /* NavigationViewController.m */,
+				D7E775221CEC03E900A456F3 /* MyProfileViewController.h */,
+				D7E775231CEC03E900A456F3 /* MyProfileViewController.m */,
+				D7E7751F1CEBB4EC00A456F3 /* DoctorNavigationViewController.h */,
+				D7E775201CEBB4EC00A456F3 /* DoctorNavigationViewController.m */,
+				D7E7751C1CEBB22E00A456F3 /* TimeListViewController.h */,
+				D7E7751D1CEBB22E00A456F3 /* TimeListViewController.m */,
+				D7E775091CEB9E6400A456F3 /* DetailViewController.h */,
+				D7E7750A1CEB9E6400A456F3 /* DetailViewController.m */,
 				D79321F21CE6875200ED9077 /* MyAppointmentsViewController.h */,
 				D79321F31CE6875200ED9077 /* MyAppointmentsViewController.m */,
 				4E1566551CE62AEE0083CA26 /* ViewController.h */,
@@ -232,13 +253,12 @@
 		D79322061CE98EB500ED9077 /* ImageSets */ = {
 			isa = PBXGroup;
 			children = (
-				D79321F91CE98E4A00ED9077 /* Itachi.jpg */,
-				D79321FB1CE98E4A00ED9077 /* Naruto.jpg */,
-				D79321FD1CE98E4A00ED9077 /* Sasuke.jpg */,
-				D79321FE1CE98E4A00ED9077 /* superman.jpg */,
-				D79321EB1CE6836800ED9077 /* medical.png */,
-				D79321E91CE6821900ED9077 /* Calendar-25.png */,
-				D79321F81CE98E4A00ED9077 /* Bleach.jpg */,
+				D7F88F9A1CECDBFB00C9D4D0 /* Circled Left-52.png */,
+				D7F88F981CECDAD100C9D4D0 /* doctor.jpg */,
+				D7F88F941CECD65400C9D4D0 /* homeDoctor.jpeg */,
+				D7E7751A1CEBB0BD00A456F3 /* Calendar-25.png */,
+				D7E7750E1CEBAA3F00A456F3 /* medical.png */,
+				D7E775101CEBAA3F00A456F3 /* prifile-pic.png */,
 			);
 			name = ImageSets;
 			sourceTree = "<group>";
@@ -316,18 +336,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79321FF1CE98E4A00ED9077 /* Bleach.jpg in Resources */,
+				D7E7751B1CEBB0BD00A456F3 /* Calendar-25.png in Resources */,
+				D7E775171CEBAA3F00A456F3 /* prifile-pic.png in Resources */,
+				D7F88F9B1CECDBFB00C9D4D0 /* Circled Left-52.png in Resources */,
+				D7F88F991CECDAD100C9D4D0 /* doctor.jpg in Resources */,
 				4E1566621CE62AEE0083CA26 /* LaunchScreen.storyboard in Resources */,
-				D79322041CE98E4A00ED9077 /* Sasuke.jpg in Resources */,
-				D79322001CE98E4A00ED9077 /* Itachi.jpg in Resources */,
 				4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */,
-				D79322051CE98E4A00ED9077 /* superman.jpg in Resources */,
-				D79322021CE98E4A00ED9077 /* Naruto.jpg in Resources */,
 				4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */,
-				D79321EA1CE6821900ED9077 /* Calendar-25.png in Resources */,
+				D7E775151CEBAA3F00A456F3 /* medical.png in Resources */,
 				4E1566751CE8CCBA0083CA26 /* Storyboard.storyboard in Resources */,
 				4E15665A1CE62AEE0083CA26 /* Main.storyboard in Resources */,
-				D79321EC1CE6836800ED9077 /* medical.png in Resources */,
+				D7F88F951CECD65400C9D4D0 /* homeDoctor.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,11 +407,14 @@
 			files = (
 				4E1F52991CEA3810008011CB /* MJPopupBackgroundView.m in Sources */,
 				4E1F529A1CEA3810008011CB /* UIViewController+MJPopupViewController.m in Sources */,
+				D7E775241CEC03E900A456F3 /* MyProfileViewController.m in Sources */,
+				D7E7750B1CEB9E6400A456F3 /* DetailViewController.m in Sources */,
 				D79321F41CE6875200ED9077 /* MyAppointmentsViewController.m in Sources */,
 				D39F8C3B1CE9956000D715CC /* ClistTableViewCell.m in Sources */,
 				4E15665D1CE62AEE0083CA26 /* project4.xcdatamodeld in Sources */,
 				4E1566571CE62AEE0083CA26 /* ViewController.m in Sources */,
 				D79322371CEA51CC00ED9077 /* MonthCollectionHeaderView.m in Sources */,
+				D7E775211CEBB4EC00A456F3 /* DoctorNavigationViewController.m in Sources */,
 				4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */,
 				4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */,
 				4E1566781CE97D390083CA26 /* cloginViewController.m in Sources */,
@@ -400,13 +422,13 @@
 				D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */,
 				4E1566541CE62AEE0083CA26 /* AppDelegate.m in Sources */,
 				D79321E81CE67F0F00ED9077 /* DocotorMainViewController.m in Sources */,
-				D793220E1CE999E000ED9077 /* CollectionViewCell.m in Sources */,
 				4E1F52911CEA236A008011CB /* cPickingViewController.m in Sources */,
 				D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */,
 				D79321F11CE6874200ED9077 /* MyCalendarViewController.m in Sources */,
 				D79321E51CE67BE600ED9077 /* SignUpViewController.m in Sources */,
 				D79322111CEA22B300ED9077 /* CustomCollectionViewCell.m in Sources */,
 				4E1566511CE62AEE0083CA26 /* main.m in Sources */,
+				D7E7751E1CEBB22E00A456F3 /* TimeListViewController.m in Sources */,
 				D79321F71CE93A1800ED9077 /* NavigationViewController.m in Sources */,
 				4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */,
 			);
@@ -521,6 +543,8 @@
 			baseConfigurationReference = 777A424D6CAD81F490F5EA62 /* Pods-project4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/project4",
@@ -529,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wenzhi.project4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -537,6 +562,8 @@
 			baseConfigurationReference = ED0B10EBDFEEF27E953D8339 /* Pods-project4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/project4",
@@ -545,6 +572,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wenzhi.project4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

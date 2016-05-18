@@ -10,8 +10,8 @@
 #import "ViewController.h"
 
 @interface MJDetailViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *warningLbl;
-@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+//@property (weak, nonatomic) IBOutlet UILabel *warningLbl;
+//@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @end
 
@@ -23,16 +23,16 @@
     // Do any additional setup after loading the view from its nib.
     popDate.text=self.dataString;
 }
-- (IBAction)submitBtn:(id)sender {
-    UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"Congratulation" message:@"You have made an appointment, you don't have to die" preferredStyle:UIAlertControllerStyleAlert];
-//    UIAlertAction *act = [UIAlertAction actionWithTitle:@"Submit" style:UIAlertActionStyleDefault handler:nil];
-    UIAlertAction *act = [UIAlertAction actionWithTitle:@"Submit" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-           self.warningLbl.text = @"You have made an appointment, you don't have to die";
-            [self.submitButton setHidden:YES];
-    }];
-    [vc addAction:act];
-    [self presentViewController:vc animated:YES completion:nil];
-}
+//- (IBAction)submitBtn:(id)sender {
+//    UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"Congratulation" message:@"You have made an appointment, you don't have to die" preferredStyle:UIAlertControllerStyleAlert];
+////    UIAlertAction *act = [UIAlertAction actionWithTitle:@"Submit" style:UIAlertActionStyleDefault handler:nil];
+//    UIAlertAction *act = [UIAlertAction actionWithTitle:@"Submit" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//           self.warningLbl.text = @"You have made an appointment, you don't have to die";
+//            [self.submitButton setHidden:YES];
+//    }];
+//    [vc addAction:act];
+//    [self presentViewController:vc animated:YES completion:nil];
+//}
 
 
 

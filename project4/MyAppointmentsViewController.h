@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MyAppointmentsViewController : UIViewController
-
+@property(strong,nonatomic) NSMutableArray *patientList;
 @end
