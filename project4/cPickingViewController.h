@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface cPickingViewController : UIViewController
-
+@property (strong , nonatomic) NSString *patientNo;
 @end

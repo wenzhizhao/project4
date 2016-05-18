@@ -10,5 +10,5 @@
 
 @interface cListingViewController : UIViewController
 @property(nonatomic)NSString *gotString;
-
+@property (strong,nonatomic) NSString *patientNo;
 @end

@@ -9,10 +9,13 @@
 #import "cAppointmentViewController.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "MJDetailViewController.h"
+#import "cTimeTableViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <Parse/Parse.h>
 
 @interface cAppointmentViewController ()
-
+@property (strong, nonatomic) NSArray *ticketArray;
+@property (strong, nonatomic) NSString *period;
 @end
 
 
@@ -55,7 +58,9 @@ NSArray * hadSession;
     thisMonth--;
     [self removeTags];
     [self updateCalNow];
+    
 }
+
 
 -(void) removeTags{
     int x=1;
@@ -195,7 +200,7 @@ NSArray * hadSession;
             [addProject setEnabled:YES];
             addProject.backgroundColor = [UIColor blueColor];
             [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-
+            
         }
         else{
             [addProject setEnabled:NO];
