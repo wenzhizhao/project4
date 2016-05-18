@@ -107,8 +107,8 @@
                                     <outlet property="delegate" destination="yGK-5O-nLk" id="btz-3R-6E0"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZj-a7-YqV">
-                                <rect key="frame" x="99" y="533" width="66" height="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZj-a7-YqV">
+                                <rect key="frame" x="99" y="532.5" width="66" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -552,48 +552,48 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="419-C7-fLB">
-                                            <rect key="frame" x="0.0" y="38" width="46" height="15"/>
+                                            <rect key="frame" x="0.0" y="38" width="45.5" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pj-gI-710">
-                                            <rect key="frame" x="46" y="38" width="45.5" height="15"/>
+                                            <rect key="frame" x="45" y="38" width="46" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaL-iC-Aka">
-                                            <rect key="frame" x="91.5" y="38" width="46" height="15"/>
+                                            <rect key="frame" x="91" y="38" width="45.5" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZl-0Q-aRz">
-                                            <rect key="frame" x="137.5" y="38" width="45.5" height="15"/>
+                                            <rect key="frame" x="137" y="38" width="46" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnI-yt-Axt">
-                                            <rect key="frame" x="182.5" y="38" width="46" height="15"/>
+                                            <rect key="frame" x="183" y="38" width="45.5" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2i-nh-ow0">
-                                            <rect key="frame" x="228.5" y="38" width="45.5" height="15"/>
+                                            <rect key="frame" x="228" y="38" width="46" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50D-nG-qCX">
-                                            <rect key="frame" x="274" y="38" width="46" height="15"/>
+                                            <rect key="frame" x="274" y="38" width="45.5" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="May" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ial-YC-TxW">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ial-YC-TxW">
                                             <rect key="frame" x="8" y="17" width="304" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -601,6 +601,7 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Ial-YC-TxW" firstAttribute="top" secondItem="gAP-Ml-aql" secondAttribute="topMargin" constant="9" id="1JR-2h-gPH"/>
                                         <constraint firstAttribute="bottom" secondItem="50D-nG-qCX" secondAttribute="bottom" id="2NX-wS-M3H"/>
                                         <constraint firstAttribute="bottom" secondItem="MnI-yt-Axt" secondAttribute="bottom" id="4CS-FU-m7q"/>
                                         <constraint firstAttribute="bottom" secondItem="P2i-nh-ow0" secondAttribute="bottom" id="4kd-rl-NcN"/>
@@ -620,10 +621,13 @@
                                         <constraint firstAttribute="bottom" secondItem="WaL-iC-Aka" secondAttribute="bottom" id="ZI5-bY-hfz"/>
                                         <constraint firstAttribute="bottom" secondItem="419-C7-fLB" secondAttribute="bottom" id="ZU6-CE-bt7"/>
                                         <constraint firstItem="WaL-iC-Aka" firstAttribute="leading" secondItem="3pj-gI-710" secondAttribute="trailing" id="bZY-IZ-SA5"/>
+                                        <constraint firstItem="Ial-YC-TxW" firstAttribute="leading" secondItem="gAP-Ml-aql" secondAttribute="leadingMargin" id="dia-3v-KnN"/>
                                         <constraint firstItem="P2i-nh-ow0" firstAttribute="leading" secondItem="MnI-yt-Axt" secondAttribute="trailing" id="f0x-3v-MeV"/>
                                         <constraint firstItem="P2i-nh-ow0" firstAttribute="height" secondItem="419-C7-fLB" secondAttribute="height" id="jir-zs-OTL"/>
                                         <constraint firstItem="gZl-0Q-aRz" firstAttribute="leading" secondItem="WaL-iC-Aka" secondAttribute="trailing" id="moz-Na-sHt"/>
                                         <constraint firstItem="MnI-yt-Axt" firstAttribute="leading" secondItem="gZl-0Q-aRz" secondAttribute="trailing" id="p7S-jH-mXH"/>
+                                        <constraint firstItem="Ial-YC-TxW" firstAttribute="trailing" secondItem="gAP-Ml-aql" secondAttribute="trailingMargin" id="p8h-4B-GnH"/>
+                                        <constraint firstItem="50D-nG-qCX" firstAttribute="top" secondItem="Ial-YC-TxW" secondAttribute="bottom" constant="5" id="pbX-Aq-9bZ"/>
                                         <constraint firstItem="gZl-0Q-aRz" firstAttribute="width" secondItem="419-C7-fLB" secondAttribute="width" id="q6T-YB-Pj8"/>
                                         <constraint firstAttribute="trailing" secondItem="50D-nG-qCX" secondAttribute="trailing" id="qO7-tv-3zh"/>
                                         <constraint firstItem="MnI-yt-Axt" firstAttribute="height" secondItem="419-C7-fLB" secondAttribute="height" id="wZh-DI-ILI"/>

@@ -62,6 +62,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
     for (int i = 0; i<self.ticketArray.count; i++) {
         if ([[_ticketArray[i] valueForKey:@"confirmedByDoc"] boolValue] == YES) {
             [self.unavailableTime setValue:[NSNumber numberWithInt:[[self.unavailableTime valueForKey:[_ticketArray[i] valueForKey:@"period"]] intValue]+1] forKey:[_ticketArray[i] valueForKey:@"period"]];

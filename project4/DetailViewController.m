@@ -66,12 +66,38 @@
                                      [confirmation saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
                                          if (!error) {
                                              UIAlertController *confirmation = [UIAlertController alertControllerWithTitle:@"" message:@"The appointment has been confirmed!" preferredStyle:UIAlertControllerStyleAlert];
-                                             UIAlertAction *OK = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                                             UIAlertAction *OK = [UIAlertAction actionWithTitle:@"Send Email" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                                                     sender.hidden = true;
+                                                 
+                                                 if ([MFMailComposeViewController canSendMail]) {
+                                                     MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc]init];
+                                                     mailController.mailComposeDelegate = self;
+                                                     [mailController setSubject:@"Appointment Confirmation"];
+                                                     [mailController setToRecipients:[NSArray arrayWithObject:@"yzhou088@gmail.com"]];
+                                                     [mailController setMessageBody:@"Hi your Appointment has been confirmed." isHTML:NO];
+                                                     [self presentViewController:mailController animated:YES completion:nil];
+                                                 }
+
                                                  [self.navigationController popViewControllerAnimated:YES];
 
                                              }];
+                                             UIAlertAction *Message = [UIAlertAction actionWithTitle:@"Send Message" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                                                 sender.hidden = true;
+                                                 
+                                                 if ([MFMessageComposeViewController canSendText]) {
+                                                     MFMessageComposeViewController *msgController = [[MFMessageComposeViewController alloc]init];
+                                                     msgController.messageComposeDelegate = self;
+                                                     [msgController setBody:@"Hi your appointment has been confirmed."];
+                                                     [msgController setRecipients:[NSArray arrayWithObject:[_dict valueForKey:@"patientNo"]]];
+                                                     [self presentViewController:msgController animated:YES completion:nil];
+                                                     
+                                                 }
+                                                 
+                                                 [self.navigationController popViewControllerAnimated:YES];
+                                                 
+                                             }];
                                              [confirmation addAction:OK];
+                                             [confirmation addAction:Message];
                                              [self presentViewController:confirmation animated:YES completion:nil];
                                             
                                          }
@@ -81,4 +107,16 @@
     
     
 }
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
+    NSLog(@"%u",result);
+}
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(nullable NSError *)error{
+    if (error) {
+        NSLog(@"%@",[error description]);
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
 @end

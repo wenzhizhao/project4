@@ -254,7 +254,7 @@
             NSDateFormatter *Compareformatter = [[NSDateFormatter alloc] init];
             [Compareformatter setDateFormat:@"yyyy-MM-dd"];
             NSString *date = [Compareformatter stringFromDate:enumDate];
-            NSLog(@"%@",date);
+//            NSLog(@"%@",date);
             
             controller.patientList = [[NSMutableArray alloc] init];
             for (short index = 0; index<[_PatietList count]; index++) {
@@ -263,7 +263,7 @@
                 }
             }
             if (controller.patientList.count) {
-                NSLog(@"%@",controller.patientList);
+//                NSLog(@"%@",controller.patientList);
 
                 [self presentViewController:controller animated:YES completion:nil];
 
@@ -296,7 +296,7 @@
             NSDateFormatter *Compareformatter = [[NSDateFormatter alloc] init];
             [Compareformatter setDateFormat:@"yyyy-MM-dd"];
             NSString *date = [Compareformatter stringFromDate:enumDate];
-            NSLog(@"%@",date);
+//            NSLog(@"%@",date);
             
             controller.patientList = [[NSMutableArray alloc] init];
             for (short index = 0; index<[_PatietList count]; index++) {

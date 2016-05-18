@@ -20,9 +20,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void)viewWillAppear:(BOOL)animated{
-
-}
 - (IBAction)docotorEntrece:(id)sender {
     SignInViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SignInViewController"];
     [self.navigationController pushViewController:controller animated:YES];

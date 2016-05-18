@@ -64,7 +64,6 @@
         }
     }];
 
-    
 }
 -(NSString*)workdayencoder:(NSArray*) array{
     NSMutableString *result = [[NSMutableString alloc]initWithFormat:@""];
