@@ -27,6 +27,7 @@
 		4E1F529A1CEA3810008011CB /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F52981CEA3810008011CB /* UIViewController+MJPopupViewController.m */; };
 		4E1F529D1CEA38B6008011CB /* cAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F529C1CEA38B6008011CB /* cAppointmentViewController.m */; };
 		4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */; };
+		4E4137721CECD92C0046AF09 /* singletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4137711CECD92C0046AF09 /* singletonClass.m */; };
 		D39F8C3B1CE9956000D715CC /* ClistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */; };
 		D79321D41CE6404B00ED9077 /* customerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321D31CE6404B00ED9077 /* customerViewController.m */; };
 		D79321DF1CE66F6F00ED9077 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79321DE1CE66F6F00ED9077 /* SignInViewController.m */; };
@@ -86,6 +87,8 @@
 		4E1F529E1CEA3A1D008011CB /* MJDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDetailViewController.h; sourceTree = "<group>"; };
 		4E1F529F1CEA3A1D008011CB /* MJDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDetailViewController.m; sourceTree = "<group>"; };
 		4E1F52A01CEA3A1D008011CB /* MJDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MJDetailViewController.xib; sourceTree = "<group>"; };
+		4E4137701CECD92C0046AF09 /* singletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singletonClass.h; sourceTree = "<group>"; };
+		4E4137711CECD92C0046AF09 /* singletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singletonClass.m; sourceTree = "<group>"; };
 		777A424D6CAD81F490F5EA62 /* Pods-project4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.debug.xcconfig"; sourceTree = "<group>"; };
 		D39F8C391CE9956000D715CC /* ClistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClistTableViewCell.h; sourceTree = "<group>"; };
 		D39F8C3A1CE9956000D715CC /* ClistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClistTableViewCell.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				4E1566631CE62AEE0083CA26 /* Info.plist */,
 				4E15665B1CE62AEE0083CA26 /* project4.xcdatamodeld */,
 				4E15664F1CE62AEE0083CA26 /* Supporting Files */,
+				4E4137701CECD92C0046AF09 /* singletonClass.h */,
+				4E4137711CECD92C0046AF09 /* singletonClass.m */,
 			);
 			path = project4;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				D79322371CEA51CC00ED9077 /* MonthCollectionHeaderView.m in Sources */,
 				D7E775211CEBB4EC00A456F3 /* DoctorNavigationViewController.m in Sources */,
 				4E15666B1CE673CE0083CA26 /* customerregisterViewController.m in Sources */,
+				4E4137721CECD92C0046AF09 /* singletonClass.m in Sources */,
 				4E1566811CE981D20083CA26 /* cDocDetailsViewController.m in Sources */,
 				4E1566781CE97D390083CA26 /* cloginViewController.m in Sources */,
 				4E1F52941CEA2467008011CB /* cListingViewController.m in Sources */,

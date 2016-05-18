@@ -456,11 +456,22 @@
                                     <outlet property="delegate" destination="WR7-sv-KMo" id="C3Z-uz-teX"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Llp-hA-b71">
+                                <rect key="frame" x="113" y="197" width="93" height="86"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CzM-8a-O0R">
+                                        <rect key="frame" x="36" y="33" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="activityIndicatior" destination="CzM-8a-O0R" id="ku4-hp-4g3"/>
+                        <outlet property="indicatorView" destination="Llp-hA-b71" id="3TN-c4-Fbv"/>
                         <outlet property="tableView" destination="Qvn-6X-fbJ" id="ua2-Y2-tOW"/>
                     </connections>
                 </viewController>
