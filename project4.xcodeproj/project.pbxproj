@@ -50,6 +50,8 @@
 		D7F88F951CECD65400C9D4D0 /* homeDoctor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F941CECD65400C9D4D0 /* homeDoctor.jpeg */; };
 		D7F88F991CECDAD100C9D4D0 /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F981CECDAD100C9D4D0 /* doctor.jpg */; };
 		D7F88F9B1CECDBFB00C9D4D0 /* Circled Left-52.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F9A1CECDBFB00C9D4D0 /* Circled Left-52.png */; };
+		D7F88F9D1CED04BD00C9D4D0 /* patient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F9C1CED04BD00C9D4D0 /* patient.jpg */; };
+		D7F88F9F1CED07EE00C9D4D0 /* UDoctorr.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F88F9E1CED07EE00C9D4D0 /* UDoctorr.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +60,7 @@
 		4E0D6B421CEB6A47006C2F85 /* cTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cTimeTableViewController.m; sourceTree = "<group>"; };
 		4E0D6B5A1CEBCE2F006C2F85 /* cCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cCenterViewController.h; sourceTree = "<group>"; };
 		4E0D6B5B1CEBCE2F006C2F85 /* cCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cCenterViewController.m; sourceTree = "<group>"; };
-		4E15664C1CE62AEE0083CA26 /* project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E15664C1CE62AEE0083CA26 /* UDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1566501CE62AEE0083CA26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E1566521CE62AEE0083CA26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4E1566531CE62AEE0083CA26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +133,8 @@
 		D7F88F941CECD65400C9D4D0 /* homeDoctor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeDoctor.jpeg; sourceTree = "<group>"; };
 		D7F88F981CECDAD100C9D4D0 /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
 		D7F88F9A1CECDBFB00C9D4D0 /* Circled Left-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circled Left-52.png"; sourceTree = "<group>"; };
+		D7F88F9C1CED04BD00C9D4D0 /* patient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = patient.jpg; sourceTree = "<group>"; };
+		D7F88F9E1CED07EE00C9D4D0 /* UDoctorr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UDoctorr.png; sourceTree = "<group>"; };
 		ED0B10EBDFEEF27E953D8339 /* Pods-project4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project4.release.xcconfig"; path = "Pods/Target Support Files/Pods-project4/Pods-project4.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,7 +172,7 @@
 		4E15664D1CE62AEE0083CA26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E15664C1CE62AEE0083CA26 /* project4.app */,
+				4E15664C1CE62AEE0083CA26 /* UDoctor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +284,8 @@
 		D79322061CE98EB500ED9077 /* ImageSets */ = {
 			isa = PBXGroup;
 			children = (
+				D7F88F9E1CED07EE00C9D4D0 /* UDoctorr.png */,
+				D7F88F9C1CED04BD00C9D4D0 /* patient.jpg */,
 				D7F88F9A1CECDBFB00C9D4D0 /* Circled Left-52.png */,
 				D7F88F981CECDAD100C9D4D0 /* doctor.jpg */,
 				D7F88F941CECD65400C9D4D0 /* homeDoctor.jpeg */,
@@ -323,7 +329,7 @@
 			);
 			name = project4;
 			productName = project4;
-			productReference = 4E15664C1CE62AEE0083CA26 /* project4.app */;
+			productReference = 4E15664C1CE62AEE0083CA26 /* UDoctor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -365,12 +371,14 @@
 			files = (
 				D7E7751B1CEBB0BD00A456F3 /* Calendar-25.png in Resources */,
 				D7E775171CEBAA3F00A456F3 /* prifile-pic.png in Resources */,
+				D7F88F9F1CED07EE00C9D4D0 /* UDoctorr.png in Resources */,
 				D7F88F9B1CECDBFB00C9D4D0 /* Circled Left-52.png in Resources */,
 				D7F88F991CECDAD100C9D4D0 /* doctor.jpg in Resources */,
 				4E1566621CE62AEE0083CA26 /* LaunchScreen.storyboard in Resources */,
 				4E1F52A21CEA3A1D008011CB /* MJDetailViewController.xib in Resources */,
 				4E41377D1CED02470046AF09 /* mmViewController.xib in Resources */,
 				4E15665F1CE62AEE0083CA26 /* Assets.xcassets in Resources */,
+				D7F88F9D1CED04BD00C9D4D0 /* patient.jpg in Resources */,
 				D7E775151CEBAA3F00A456F3 /* medical.png in Resources */,
 				4E1566751CE8CCBA0083CA26 /* Storyboard.storyboard in Resources */,
 				4E15665A1CE62AEE0083CA26 /* Main.storyboard in Resources */,
@@ -584,7 +592,7 @@
 				INFOPLIST_FILE = project4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wenzhi.project4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UDoctor;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -603,7 +611,7 @@
 				INFOPLIST_FILE = project4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wenzhi.project4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UDoctor;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
