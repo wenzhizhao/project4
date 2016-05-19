@@ -38,7 +38,7 @@
 
 - (IBAction)submitBtn:(id)sender {
     //check if all the field are filled
-    if (self.nameField.text.length>0 && self.passField.text.length>0 && self.mobileField.text.length>0 && self.emailField.text.length>0 && [self isPasswordValid:self.emailField.text]) {
+    if (self.nameField.text.length>0 && self.passField.text.length>0 && self.mobileField.text.length>0 && self.emailField.text.length>0 && [self checkEmail:self.emailField.text]) {
         //check if the user is alrealdy register
         PFQuery *pwdQuery = [PFQuery queryWithClassName:@"Patients"];
         [pwdQuery whereKey:@"Mobile" equalTo:self.mobileField.text];
@@ -61,29 +61,38 @@
                     [patients setObject:self.emailField.text forKey:@"Email"];
                     
                     [patients saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-                        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"congratulation" message:[NSString stringWithFormat:@"you just enrolled in the awesome program"] preferredStyle:UIAlertControllerStyleAlert];
-                        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction  *_Nonnull action) {
-                            
-                        }];
-                        [alert addAction:ok];
-                        [self presentViewController:alert animated:YES completion:nil];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"congratulation" message:[NSString stringWithFormat:@"you just enrolled in the awesome program"] preferredStyle:UIAlertControllerStyleAlert];
+                            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction  *_Nonnull action) {
+                                [self.navigationController popViewControllerAnimated:YES];
+
+                            }];
+                            [alert addAction:ok];
+                            [self presentViewController:alert animated:YES completion:nil];
+                            //pop the vc here
+//                            sleep(1);
+                        });
+
                     }];
                     
-                    //pop the vc here
-                    sleep(1);
-                    [self.navigationController popViewControllerAnimated:YES];
+
                 }
             }
         }];
     }
     else{
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Warning" message:@"all the field must be filled" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Warning" message:@"some field missed or email is not in good format" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction  *_Nonnull action) {
         }];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
         
     }
+}
+-(BOOL) checkEmail:(NSString *) email{
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:email];
 }
 -(BOOL) isPasswordValid:(NSString *)pwd {
 //    if ( [pwd length]<5 || [pwd length]>8 ) return NO;  // too long or too short
