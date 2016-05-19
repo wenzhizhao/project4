@@ -496,13 +496,13 @@
                                     <constraint firstAttribute="height" constant="44" id="th0-Ty-rh0"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Item" systemItem="cancel" id="9up-fk-W4E">
+                                    <barButtonItem title="Cancel" id="9up-fk-W4E">
                                         <connections>
                                             <action selector="cancelBarItem_Pressed:" destination="Hdz-iK-6k3" id="Wgr-V4-c0k"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="196" style="plain" systemItem="fixedSpace" id="Woy-Gd-TsN"/>
-                                    <barButtonItem systemItem="done" id="WYE-Wa-f9Y">
+                                    <barButtonItem title="Done" id="WYE-Wa-f9Y">
                                         <connections>
                                             <action selector="doneBarItem_Pressed:" destination="Hdz-iK-6k3" id="2Lo-cs-in6"/>
                                         </connections>
@@ -716,7 +716,7 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="KLQ-HS-osO">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VJF-YU-fdJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="VJF-YU-fdJ">
                                             <connections>
                                                 <action selector="cancel_pressed:" destination="6Bw-Il-16K" id="rYW-kp-GD7"/>
                                             </connections>
@@ -1230,25 +1230,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAw-Kd-xYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2521" y="79"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8VT-9k-lK6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mE2-ro-ejF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pea-BA-zv0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yGK-5O-nLk" kind="relationship" relationship="rootViewController" id="8pz-ln-6dA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0MI-zi-QNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1687" y="335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="efY-jI-zu0">
